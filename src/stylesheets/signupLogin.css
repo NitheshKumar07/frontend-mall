@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0%;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition:background-color ;
+}
+
+.flexbody{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+.loginbody{
+    background-color: #e9ecef;
+}
+.signupBody{
+background-color: #f8f9fa;
+/* background-color: #e9ecef; */
+}
+.loginComponent{
+    background-color: #e9ecef;
+    width: fit-content;
+    margin: auto;
+    height: fit-content;
+}
+
+.signupComponent{
+    background-color:#f8f9fa ;
+    width: fit-content;
+    margin: auto;
+    /* background-color: yellow; */
+    padding: 5pc 0;
+}
+.form{
+    /* background-color: #dcedef;      */
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding: 2.2pc 5pc 2.5pc 3pc;
+    width: 35pc;
+    user-select: none;
+    transition: all 1s ease;
+    /* margin-top: -5px; */
+    /* border-top: 5px solid transparent; */
+}
+.form h2{
+    font-size: 2.1rem;
+    width: fit-content;
+}
+.form h4{
+    font-size: 1.25rem;
+    width: fit-content;
+}
+.form b{
+    font-size: 2.6rem;
+    color: #0088ff;
+}
+.signupContent{
+    font-size:1.2rem;
+    width: 92%;
+}
+.signupContent button{
+    border: none;
+    padding: 0.8pc 1.5pc;
+    margin: 23px 0;
+    border-radius: 30px;
+    background-color:#1e88e5;
+    color: white;
+    font-size: 1.2rem;
+}
+.signupContent button:hover{
+    cursor: pointer;
+    background-color: #1e88e5dd;
+}
+#float{
+    position: relative;
+    margin-top: 30px;
+    overflow:visible;
+    /* background-color: green; */
+}
+#float input {
+    border :2px solid transparent;
+    padding: 1pc;
+    outline: none;
+    border-radius: 3px;
+    /* margin: 15px 0px; */
+    width: 93%;
+    /* background-color:#e9ecef; */
+    font-size: 1.2rem;
+}
+.signupBody input{
+    background-color: #e9ecef;
+}
+.loginbody input{
+    background-color:#f8f9fa ;
+}
+
+#full-name, #email{
+    text-transform: lowercase;
+}
+
+#float input:focus{
+    border :2px solid #1e88e5;
+}
+#float label{
+    position: absolute;
+    top: 50%;
+    left:15px;
+    transform: translateY(-50%);
+    color:grey;
+    cursor: text;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+#float input:focus+label,#float input:not(:placeholder-shown)+label {
+    top: -0.7pc;
+    left: -1px;
+    font-size: 0.9rem;
+    color: black;
+}
+
+#text{
+    text-align: center;
+    margin-top: 30px;
+
+}
+#loginSignupInfo{
+    color: grey;
+}
+#streching{
+    display: inline-block;
+    transform-origin: bottom bottom;
+    transition: 0.5s ;
+}
+#streching:hover{
+    transform:scale(1.1);
+    
+}
+#warningPara{
+color:red;
+font-size:0.9rem;
+/* background-color: yellow; */
+width: fit-content;
+/* margin-top: -1px; */
+position: absolute;
+right: 0px;
+/* bottom: -34px; */
+}
+.shake{
+    animation: shaking 0.15s 2;
+}
+@keyframes shaking{
+    0%{transform: translate(0px)}
+    25%{transform: translate(5px)}
+    50%{transform: translate(-5px)}
+    75%{transform: translate(-5px)}
+    100%{transform: translate(0px)}
+}
+.mode{
+    background-color:#121212;
+    color:#E0E0E0;
+}
+#eye{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* background-color: yellow; */
+    padding: 17px 10px;
+    cursor: pointer;
+    /* font-weight: 500; */
+}
+
+/* blur while load */
+.blurLink{
+    color: #1e88e59f;
+    pointer-events: none;
+}
+
+.pointerNoneLoading{
+    pointer-events: none;
+}
+
+/* animation border */
+.formanime{
+    /* background-color: green; */
+    width: 50%;
+    border-top: 5px solid transparent;
+}
+.formanimeLoading{
+    /* height: 20px; */
+    width: 50%;
+    /* background-color: #1e88e59f; */
+    border-top: 5px solid #1e88e59f;
+    animation: loadingAnimation 2.5s infinite;
+}
+
+#printErrSignup{
+    color: red;
+    /* background-color: pink; */
+    text-align: start;
+    /* margin-left: 70px; */
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@keyframes loadingAnimation {
+   0%{transform: translateX(0%);}
+   50%{transform: translateX(100%);}
+   100%{transform: translateX(0%);}
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .form {
+      padding: 2pc;
+      width: 85%;
+      background-color: transparent;
+    }
+    
+  
+    .signupContent button {
+      width: 100%;
+    }
+  
+    #float input {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .form {
+      padding: 1.5pc;
+    }
+  
+    .form h2 {
+      font-size: 1.8rem;
+    }
+  
+    .form h4 {
+      font-size: 1.1rem;
+    }
+  
+    .signupContent {
+      font-size: 1rem;
+    }
+  
+    .signupContent button {
+      font-size: 1rem;
+    }
+  }
+  #username{
+    text-transform: lowercase;
+  }

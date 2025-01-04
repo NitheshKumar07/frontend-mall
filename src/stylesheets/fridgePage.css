@@ -1,0 +1,10 @@
+.fridgeItemImg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f3f4;
+    max-width: 240px;
+    height:290px;
+    overflow: hidden;
+    position: relative;
+}

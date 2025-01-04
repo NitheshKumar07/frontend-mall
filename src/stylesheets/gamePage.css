@@ -1,0 +1,19 @@
+.gameItemImg-box{
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:180px;
+    height: 280px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.gameItem-img{
+    transition: all .3s ease-in-out;
+    width: 72%;
+}
+.gameItem-img:hover{
+    transform: scale(1.1);
+}
