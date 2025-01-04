@@ -25,3 +25,5 @@ yarn-error.log*
 =======
 node_modules
 >>>>>>> 1371ace58ab99bda6eea6f09cdc0bbf20e01a9aa
+
+.vercel
