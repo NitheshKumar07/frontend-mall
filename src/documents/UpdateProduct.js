@@ -164,7 +164,7 @@ useEffect(() => {
     setButtonLoader();
     setDisabled(true);
     setHasErr(false);    
-    axios.put(`https://website-api-nu.vercel.app/product/${params.id}`,productform)
+    axios.put(`https://website-api-nu.vercel.app/${params.id}`,productform)
     .then(res=>
       {
         if( SelectedCategoryID === '66dde0197a66622cc0734fee'){navigate('/phonepage');}
@@ -187,7 +187,7 @@ useEffect(() => {
         removeButtonLoader();
         setDisabled(false);
         setHasErr(true);
-        setErr('Unable to upload product!');
+        setErr('Unable to update product!');
        }, 3000);
       })
   }
@@ -196,7 +196,7 @@ useEffect(() => {
   return (<>
   <div className='post-Container'>
     <form className='postProducts' onSubmit={postProduct} style={colorFunction}>    
-    <h1>Create New Product</h1>
+    <h1>Update Product</h1>
     <hr/>
     {hasErr && <p style={{color:"red" ,fontSize:'1.25rem',textAlign:'center',fontFamily:'monospace,arial'}}>{err}</p>}
     <div className='postItemContainer'>  
