@@ -164,7 +164,7 @@ useEffect(() => {
     setButtonLoader();
     setDisabled(true);
     setHasErr(false);    
-    axios.put(`https://website-api-nu.vercel.app/${params.id}`,productform)
+    axios.put(`https://website-api-nu.vercel.app/category/${params.id}`,productform)
     .then(res=>
       {
         if( SelectedCategoryID === '66dde0197a66622cc0734fee'){navigate('/phonepage');}
