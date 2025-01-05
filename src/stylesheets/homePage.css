@@ -2172,7 +2172,7 @@ body.no-scroll {
         height: 100%;
     }
 }
-@media screen and (max-width: 500px){ 
+@media (min-width:400px) and (max-width:500px){
     .sideBarBody{
         top: 12px;
     }    
@@ -2644,6 +2644,7 @@ body.no-scroll {
     }
     #nikeColl{
         font-size: 1.8em;
+        display: none;
     }
     #nikeColl::before{
         width: 5pc;
@@ -2774,6 +2775,684 @@ body.no-scroll {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 399px){ 
+    .sideBarBody{
+        top: 22px;
+    }    
+    .infosvgDiv{
+        flex-direction: column;
+    }
+    #acBanner, .laptopBannerDiv, #watchBanner, #shoeBanner, #jeansBanner, .tvBannerDiv{
+        width: 0;
+    }
+    .laptopBannerDiv p{
+        display: none;
+    }
+    #simProd{
+        font-size: 1.5em;
+      }
+    .handbagItem-Price #mobleItem-realprice{
+        font-size:1.3em;
+    }    
+    .super-boxChudidar{
+        width:100%;
+    }
+    .allmargin{
+        width: 100%;
+        margin: 10% 0;
+    }
+    .sideBarBody{
+        display: block;
+    }
+    #mall-logo{
+        font-size: 1.4rem;
+    }
+    #bagtitle,#wishlisttitle, #profiletitle{
+        display: none;
+    }
+    .carousel-box{
+        padding-bottom:10px;
+    }
+    .carousel-box::-webkit-scrollbar{
+        display: block;
+        height: 2px;
+    }
+    .carousel-box::-webkit-scrollbar-track{
+        background-color: #fff;
+    }
+    .carousel-box::-webkit-scrollbar-thumb{
+        background-color: #495057;
+        width:40%;
+    }
+    .carousel-container #left-btn, #right-btn{
+       display: none;
+    }
+    .fridge-img{
+        display: none;
+    }
+    .tv-ac-container .ac-img{
+        height: auto;
+        width:auto;
+    }
+    .cards-box-container  .watch-gaming-box-container{
+        display: none;
+        height:auto;
+        gap:10px;
+    }
+    .cards-box-container .item-reach-link2{
+        margin-top:0px;
+    }
+    .bag-car-box::-webkit-scrollbar-thumb{
+        width: 30%;
+    }
+    .all-bag-slide-image-box{
+        width: 230px;
+        height:250px;
+    }
+    .all-bag-slide-image-box img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        object-position:center;
+    }
+    .carousel-content #prod-name{
+        font-size: 1.15rem;
+        width:230px;
+    }
+    .mens-shopping-container .bag-main-container{
+        margin: 0 5px;
+    }
+    .bag-main-container .bag-arrow{
+        display: none;
+    }
+    .mens-shopping-container #prod-name{
+        font-size: 0.99em;    
+        width: 215px;    
+    }
+    .shoe-bag-main-container .shoe-arrow{
+        display: none;
+    }
+    .menuBar{
+        width:290px;
+        top: 60px;
+        font-size:0.87em;
+    }
+    #sideBar:checked ~ label #menuCancelIcon{
+        left: 250px;
+    }
+    
+    .nav-bar{
+        height:60px;
+    }
+    .nav-bar .category{
+        display: none;
+    }
+    .carousel-container{
+        padding: 14px 0 20px 14px ;
+        margin-top: 40px;
+        gap:12px;
+    }
+    .carousel-image .all-carousel-images-cont{
+        height:140px;
+        width: 220px;
+    }
+    .carousel-container #prod-name{
+        font-size: 0.99em;
+        width: 200px;
+    }
+    .main-container .cards-box-container{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .saree-shoe-chudidar-img {
+        height:460px;
+        width:320px ;
+        margin: 10px 0;
+    }
+    .men-shopping-sub-container{
+        display:block;
+        padding:0px;
+    }
+    .s-b-chudi-sub-container{
+        margin:0px 30px;
+        padding:15px 25px;
+        margin-bottom: 10px;
+    }
+    .mens-shopping-container #bag-main1-container{
+        display: none;
+    }
+    .mens-shopping-container #bag-main2-container{
+        display:block;
+    }
+    .icon{
+        /* margin-right: -3px; */
+    }
+    .icons svg{
+        height:23px;
+        width: 23px;
+    }
+    .cart-svg #cartCount{
+        width: 14px;
+        height:14px;
+        left: 20px;
+        /* top: -8px; */
+        font-size: 0.65rem;
+        transform: scale(0.82);
+    }
+    .profileDropdown .listDropdown{
+        top: 45px;
+        left:-10px;
+        padding: 0px;
+    }
+     .addpro{
+        font-size: 0.8em;
+     }
+    .listDropdown .loginDropdown{
+        font-size: 0.8em;
+        min-width: fit-content;
+        padding: 1px 5px;
+        font-weight:500;
+    }
+    .profileIcon{
+        display: none;
+    }
+    .image-logo{
+        height:50%;
+        width:50px;
+        /* margin-left: -50px; */
+    }
+    .search-bar{
+        width: 50%;
+        margin:5px 10px 0 10px;
+        height: 30px;
+    }    
+    #menuIcon{
+        block-size:1.14rem;
+        left:0px;
+        top:-30px;
+    }
+    #menuCancelIcon{
+        block-size: 1rem;
+        top:-15px;
+    }
+    .hero-container{
+        margin-top: 60px;
+    }
+    .carousel-container h2{
+        font-size: 1.28rem;
+    }
+    .mens-shopping-container h3{
+        font-size: 1.18rem;
+    }
+    .mens-shopping-container h4{
+        font-size: 1rem;
+    }
+
+    .cards-box-container h3{
+        font-size: 1.1rem;
+    }
+    .mobile-box-container p{
+        font-size: 0.8em;
+    }
+    .homepageMargin{
+        margin: 19% 0 0 0;
+    }
+    .slider-images{
+        width: 41px;
+    }
+    .slder-subContainer{
+        gap: 5px;
+        height:220px;
+    }
+    .slider-images:first-child, .slider-images:last-child{
+        display: none;
+    }
+    .slider-images:nth-child(2), .slider-images:nth-child(6){
+        height: 110px;
+    }
+    .slider-images:nth-child(3), .slider-images:nth-child(4), .slider-images:nth-child(5){
+        height: 165px;
+    }
+    .slider-images.activeImg{
+        width: 220px;
+        height:220px;
+    }
+    .slider-container{
+        padding:2pc 0pc;
+    }
+    .slider-container h4{
+        font-size:1em;
+        top: 50%;
+        left: -10%;
+    }
+    #h4handbag, #h4suit{
+        font-size:1.6pc;
+    }
+    .chudidar-main-container, .handbag-main-container, .item-main-container{
+        margin: 5px 2px;
+        width:180px; 
+        /* width: 190px; */
+    }
+    .lahengaSuitItemImg-container{
+        width: 100%;
+        height: 250px;
+        /* height: 261.3px; */
+    }
+    .handbagItemDetails-container{
+        width: 100%;
+    }
+    .chudidarItem-name{
+        font-size: 0.78em;
+        width: 100%;
+    }
+    #updateItem,#deleteItem{
+        font-size: .8em;
+        padding: 2.5% 10%;
+    }
+    .handbagItemDetails-container .items-Cart{
+        font-size: .72em;
+        width: 100px;
+        height:28px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container{
+        width: 100%;
+        height:380px;
+    }
+    .suitItemImg-container{
+        width: 100%;
+        height:225px;
+    }
+    .shoeItemImg-box, .watchItemImg-container{
+        width: 100%;        
+        /* height: 190px; */
+        height:180px;
+    }
+    /* .mobileItemImg-container{
+        width: 100%;
+        height:200px;
+    } */
+
+    .mobileItemImg-container{
+        width: 180px;
+        height:220px;
+    }
+    .mobileItemImg-box{
+        /* max-width: 200px;
+        max-height:500px; */
+    }
+        .laptopItem-img{
+        transform: scaleX(.9);
+    }
+    .mobileItemImg-containerPhoneSMALL{
+        width:180px;
+        min-height:200px;
+        max-height:245px;
+        /* width: 300px; */
+        /* height:270px; */
+    }
+    #brandName{
+        font-size: .9em;
+    }
+    .phoneNAME{
+        width: 195px;
+    }
+    .mobileItemImg-containerSMALL{
+        width: 210px;
+    }
+    .tvNAME{
+        width: 165px;
+    }
+
+    .cart-placeorder-btn{
+        width: 100%;
+    }
+    .cart-main-container{
+        flex-direction: column;
+    }
+    .cart-address{
+        width: 95%;
+        margin-top: 0px;
+    }
+    .paymentContainer{
+        margin-top:-10px;
+    }
+    #wish-item-name{
+        font-size: .85em;
+    }
+    #wish-title{
+        width:10pc;
+        font-size: .75em;
+        text-align: left;
+    }
+    .cart-img{
+        height:90px;
+        width: 90px;
+    }
+    .wish-main-div{
+        gap: 18px;       
+    }
+    #cart-item-subtotal, .cart-item-offer{
+        font-size: .85em;
+    }
+    .quantity-cart{
+        padding: 0px 15px;
+        width: 15px;
+        font-size: .9em;
+    }
+    .cart-sub-containerMAX{
+        display: none;
+    }
+    .cart-sub-containerMINI{
+        display: block;
+    }
+    .soloLaptop-Container, .soloSuit-Container{
+        flex-direction: column;
+        margin-top: 5pc;
+    }
+    .soloLaptop-details-decription-container{
+        gap: 0;
+        width: 100%;
+        padding: 0 .4pc;
+        /* gap: 1pc; */
+    }
+    .solomyLaptopImg-Container{
+        width: 100%;
+    }
+    #soloItem-title{
+        font-size: .9em;
+    }
+    .Solosvg1 p{
+        font-size: .67rem;
+    }
+    .lghtwgt p{
+        font-size: .8rem;
+        color: grey;
+    }
+    #soloItemDescriptionTEXT{
+        font-size: .9em;
+        line-height: 1.65;
+    }
+    .two-btns #soloItem-buy-btn, .two-btns #soloItem-cart-btn{
+        width: 50%;
+    }
+    .solojeansImg-Container{
+        width: 100%;
+    }
+    .soloShoeImg-Container{
+        width: 100%;
+        height:auto;
+    }
+    .soloSuitImg-Container{
+        width: auto;
+    }
+    .soloSuitImg-box{
+        width: 95%;
+        height:95%;
+    }    
+    #soloSuit-img{
+        width: 100%;
+    }
+    .cart-placeorder-btn{
+        display: none;
+    }
+    .payDivCart{
+        display: flex;
+    }
+    .manysareeContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .womensfashionsubContainerIMG img{
+        border-radius: 10%;
+        min-width: 12pc;
+        height:11pc;
+        box-sizing: border-box;
+    }
+    .imgIcrShoe img{
+        height: 12pc;
+    }
+    .linktitle h3{
+        font-size: 1.5em;
+    }
+    .linktitle p{
+        font-size: 1em;
+    }
+    .btnarrow-move button{    
+        font-size: .8em;
+        letter-spacing: .8px;
+    }
+    .arrowLinkSVG{
+        height:20px;
+        width: 20px;
+    }
+    .btnarrow-move{
+        gap:15px;
+        padding: 6px 18px;
+    }
+    .womensfashionLink{
+        align-self: start;
+    }
+    .womensfashionContainer{
+        gap: 0pc;
+    }
+    .moveIMG{
+        height: 15pc;
+        width: 40pc;
+    }
+    .womensfashionsubContainer{
+        margin-bottom: -8pc;
+    }
+    #nikeColl{
+        font-size: 1.8em;
+    }
+    #nikeColl::before{
+        width:3.2pc;
+        left: -4pc;
+    }
+    #nikeColl::after{
+        right:-4pc;
+        width: 3.2pc;
+    }
+    .womensfashionsubContainer{
+        gap: 20px;
+    }
+    .bagbanner{
+        object-position:left;
+    }
+    .homeBagmove{
+        display: none;
+    }
+    .imgforMAX{
+        display: none;
+    }
+    .imgforMid{
+        display: none;
+    }
+    .imgforMINI{
+        display: block;
+    }
+    .mzWallaceColor{
+        color: #fff;
+    }
+    .shoeMovePriceSvg svg{
+        fill: #fff;
+    }
+    #succ{
+        font-size: 1.5rem;
+    }
+    #reachingYou{
+        font-size: 1.08rem;
+    }
+    .placedbutton{
+        font-size: 1rem;
+        padding: 5px 18px;
+    }
+    .emptyCartDiv img{
+        width: 90%;
+    }
+    #letsAdd{
+        font-size: .95rem;
+        text-align: center;
+    }
+    #conShop, .startshop{
+        padding: 6px 20px;
+        font-size:.9em;
+    }
+    .loginComponent{
+        padding: 50% 0;
+    }
+    .tv-box-container{
+        display: none;
+    }
+    .imageSlide-image{
+        height: 100%;
+    }
+    .imageSlide{
+        height:12pc;
+    }
+    .footer-sub{
+        font-size: .8em;
+    }
+    #sec-1-head{
+        font-size: 1.05em;
+    }
+    #foll{
+        font-size: .8em;
+    }
+    .copywright{
+        font-size: .72rem;
+    }
+    .footer-sec-4 p{
+        font-size: .68rem;
+    }
+    .footer-sec-4 h4{
+        font-size: .78em;
+    }
+    .cart-msg{
+        transform: translate(-50%, -100%);
+    }
+    .cart-msg{
+        font-size: .8em;
+        width: 12pc;
+        padding: 8px 10px;
+    }
+    .carousel-image #add-cart-btn{
+        font-size: .8em;
+        padding:8px 0;
+    }
+
+     .filter-container1{
+        display: none;
+     }
+
+     .filter-checkboxes label{
+        font-size: .8rem;
+        text-transform: capitalize;
+    }
+    #filter{
+        font-size: .85rem;
+    }
+    .filter-checkbox{
+        gap: 12px; 
+    }
+    .filter-brandBtn-arrow-container p{
+        font-size: .8rem;
+    }
+    .svgfilterDiv{
+        display: block;
+    }
+    .bagmoveImgMain-container{
+        width: 15pc;
+    }
+    .image-container p, .image-container1 p{
+        font-size: 1.2em;
+    }
+    #noMatch, #errMsg{
+        transform: translateY(22pc);
+    }
+    .super-box{
+        justify-content: center;
+    }
+    .LEFTmARGIN{
+        margin-left: -12%;
+    }
+    .imgIcrShoe{
+        margin-left: -10%;
+    }
+    .imgIcrsuit{
+        height: 25pc;
+        width: 11.4pc;
+    }
+    .sareeFlow img{
+        width: 11pc;
+        height:11pc;
+    }
+    .imgIcrbag{
+        width: 10pc;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .sideBarBody{
+        top: 25px;
+    }  
+    .womensfashionsubContainerjeans{
+        padding-bottom: 3.8pc;
+    }
+    .imgIcrShoe img{
+        height: 11pc;
+    }
+    .womensfashionsubContainerIMG img{
+        min-width: 8pc;
+        /* height:11pc; */
+    }
+    .sareeFlow img{
+        width: 11pc;
+        height:11pc;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    .sideBarBody{
+        top: 28px;
+    }  
+    .womensfashionsubContainerIMG img{
+        min-width: 6pc;
+        /* max-width: 7pc;
+        max-height: 7pc; */
+        /* height:11pc; */
+    }
+    .sareeFlow img{
+        width: 11pc;
+        height:11pc;
+    }
+    .moveIMG{
+        height: 12pc;
+        width: 32pc;
+    }
+    .btnarrow-move button{
+        font-size: .65em;
+    }
+    .linktitle h3{
+        font-size: 1.4em;
+    }
+    .linktitle p{
+        font-size: .82em;
+    }
+    .imgIcrShoe img{
+        height: 10pc;
+    }
+    #nikeColl::before{
+        display: none;
+    }
+    #nikeColl::after{
+        display: none;
+    }
+
+}
+
+
 @media (min-width: 501px) and (max-width:1019px){
     #acBanner, .laptopBannerDiv, #watchBanner, #shoeBanner, #jeansBanner, .tvBannerDiv{
         width: 0;

@@ -726,7 +726,7 @@ const navigateGamingPageHome = () => {
 
       <div className='womensfashionContainer'>
         <div className='womensfashionsubContainer'>
-          <div className='womensfashionsubContainerIMG imgIcr'><img style={{transform:'scale(1.12,1.05'}} src={require('../assests/newwallpapers/newchudidar5edit.jpg')}/></div>
+          <div className='womensfashionsubContainerIMG imgIcr imgIcrchudi'><img style={{transform:'scale(1.12,1.05'}} src={require('../assests/newwallpapers/newchudidar5edit.jpg')}/></div>
           <div className='womensfashionLink'>
             <div className='linktitle'>
               <h3>Timeless Weave Legacy</h3><p>explore the rich tapestry of tradition, draping suit in hierloom elegance</p>
@@ -748,7 +748,7 @@ const navigateGamingPageHome = () => {
             <button>SHOP NOW</button>
             </div>
             </div>
-            <div className='womensfashionsubContainerIMG imgIcr'><img src={require('../assests/newwallpapers/newbag8edit.jpg')}/></div>
+            <div className='womensfashionsubContainerIMG imgIcr imgIcrbag'><img src={require('../assests/newwallpapers/newbag8edit.jpg')}/></div>
         </div>
 
         <div className='womensfashionsubContainer'>
@@ -842,7 +842,7 @@ const navigateGamingPageHome = () => {
             </div>
         </div>
 
-        <div className='womensfashionsubContainer' style={{marginBottom:'5pc', marginTop:'-2pc'}}>
+        <div className='womensfashionsubContainer womensfashionsubContainerjeans' style={{marginBottom:'5pc', marginTop:'-2pc'}}>
           <div className='womensfashionLink'>
             <div className='linktitle' style={{marginLeft:'10%'}}>
               <h3>Exquisite Treasures</h3><p>a curated collection of jeans blending timeless beauty with modern sophistication</p>
@@ -856,7 +856,7 @@ const navigateGamingPageHome = () => {
         </div>
 
         <div className='womensfashionsubContainer'>
-          <div className='womensfashionsubContainerIMG imgIcr'><img src={require('../assests/newwallpapers/newsuit3edit.jpg')} style={{transform:'scaleX(-1)'}}/></div>
+          <div className='womensfashionsubContainerIMG imgIcr imgIcrsuit'><img src={require('../assests/newwallpapers/newsuit3edit.jpg')} style={{transform:'scaleX(-1)'}}/></div>
           <div className='womensfashionLink'>
             <div className='linktitle'>
               <h3>Elegant Noir</h3><p>timeless elegance awaits in occssional suit collection. discover your perfect fit today</p>
