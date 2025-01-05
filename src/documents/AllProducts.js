@@ -522,7 +522,7 @@ const navigateGamingPageHome = () => {
               <ul>
                 <li className='sidebar-cntnt womens-fashion'><a className='a' ><div className='arrow-link'>Women Fashion<span id='arrowMark' className='arrowmark-womens' htmlFor='sideBar'>&#10095;</span></div></a>
                   <ul className='womens-Sub-a'>
-                    <li><Link onClick={() => closeSidebar()} className='womans-sub-li a' to='/chudidarpage'>Salwar Kameez</Link></li>
+                    <li><Link onClick={() => closeSidebar()} className='womans-sub-li a' to='/chudidarpage'>Chudidar</Link></li>
                     <li><Link onClick={() => closeSidebar()} className='womans-sub-li a' to='/sareepage'>Saree</Link></li>
                     <li><Link onClick={() => closeSidebar()} className='womans-sub-li a' to='/handbagpage'>Bags</Link></li>
                   </ul></li>
