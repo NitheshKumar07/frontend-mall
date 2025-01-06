@@ -100,10 +100,6 @@ background-color: #f8f9fa;
     background-color:#f8f9fa ;
 }
 
-#full-name, #email{
-    text-transform: lowercase;
-}
-
 #float input:focus{
     border :2px solid #1e88e5;
 }
@@ -254,7 +250,4 @@ right: 0px;
     .signupContent button {
       font-size: 1rem;
     }
-  }
-  #username{
-    text-transform: lowercase;
   }

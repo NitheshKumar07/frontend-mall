@@ -196,8 +196,8 @@ const handleAddtoCart = () => {
      <div className='soloItem-realPrice'><p id='soloItem-realRupee'>₹ {Number(soloLaptopDetails.price).toLocaleString('en-IN')} <span id='mrpText'>MRP</span></p><p id='tax'>inclusive of all taxes</p></div>
      {soloLaptopDetails.discount && <div className='soloItem-cancelPrice'><p id='soloItem-cancelRupee'>₹ {Number(soloLaptopDetails.realprice).toLocaleString('en-IN')}</p>
       <p id='soloItem-discount'>{soloLaptopDetails.discount}% OFF</p></div>}
-      <div className='shareLogo' onClick={() => handleShare(watsappURL)}>{watsapp}</div>
     </div>
+    <div className='shareLogo' onClick={() => handleShare(watsappURL)}>{watsapp}</div>
   </div>
 
   <div className='two-btns'>

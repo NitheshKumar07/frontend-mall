@@ -215,10 +215,10 @@ const handleAddtoCart = () => {
     {soloLaptopDetails.brandName && <p id='soloItem-brandName'>{soloLaptopDetails.brandName}</p>}
     <p id='soloItem-title'>{soloLaptopDetails.title}</p>
     <div className='soloItem-complete-price'>
-     <div className='soloItem-realPrice'><p id='soloItem-realRupee'>₹ {Number(soloLaptopDetails.price).toLocaleString('en-IN')} <span id='mrpText'>MRP</span></p><p id='tax'>inclusive of all taxes</p></div>
+     <div className='soloItem-realPrice'>
+      <p id='soloItem-realRupee'>₹ {Number(soloLaptopDetails.price).toLocaleString('en-IN')} <span id='mrpText'>MRP</span></p><p id='tax'>inclusive of all taxes</p></div>
      {soloLaptopDetails.discount && <div className='soloItem-cancelPrice'><p id='soloItem-cancelRupee'>₹ {Number(soloLaptopDetails.realprice).toLocaleString('en-IN')}</p>
       <p id='soloItem-discount'>{soloLaptopDetails.discount}% OFF</p></div>}
-      <div className='shareLogo' onClick={() => handleShare(watsappURL)}>{watsapp}</div>
     </div>
     <div className='sizeChart'>
         <p>Select Size:</p>
@@ -231,6 +231,7 @@ const handleAddtoCart = () => {
         ))}
      </div>
     </div>
+    <div className='shareLogo' onClick={() => handleShare(watsappURL)}>{watsapp}</div>
   </div>
 
   <div className='two-btns'>
@@ -255,7 +256,7 @@ const handleAddtoCart = () => {
 
 
 
-<div className='lghtCont' style={{flexDirection:'row',gap:'1pc'}}>
+<div className='lghtCont'>
 <div className='lghtwgt' style={{backgroundColor:'#f6f8f9', padding:'5px 10px'}}><div>{svgFit}</div><p>Custom Fit</p></div>
 <div className='lghtwgt' style={{backgroundColor:'#f6f8f9', padding:'5px 10px'}}><div>{bestPrice}</div><p>Best Price</p></div>
 <div className='lghtwgt' style={{backgroundColor:'#f6f8f9', padding:'5px 10px'}}><div>{original}</div><p>100% Original Quality</p></div>
