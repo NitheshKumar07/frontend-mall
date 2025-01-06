@@ -725,7 +725,7 @@ const navigateGamingPageHome = () => {
       {/* <img className='imgBanner' src={require("../assests/LADYSUITwallpaper.jpg")} /> */}
 
       <div className='womensfashionContainer'>
-        <div className='womensfashionsubContainer'>
+        <div className='womensfashionsubContainer movedownMar'>
           <div className='womensfashionsubContainerIMG imgIcr imgIcrchudi'><img style={{transform:'scale(1.12,1.05'}} src={require('../assests/newwallpapers/newchudidar5edit.jpg')}/></div>
           <div className='womensfashionLink'>
             <div className='linktitle'>
@@ -751,7 +751,7 @@ const navigateGamingPageHome = () => {
             <div className='womensfashionsubContainerIMG imgIcr imgIcrbag'><img src={require('../assests/newwallpapers/newbag8edit.jpg')}/></div>
         </div>
 
-        <div className='womensfashionsubContainer'>
+        <div className='womensfashionsubContainer sareeFlowdiv'>
           <div className='womensfashionsubContainerIMG sareeFlow'><img src={require('../assests/newwallpapers/newsaree3edit.jpg')}/></div>
           <div className='womensfashionLink'>
             <div className='linktitle'>
@@ -829,7 +829,7 @@ const navigateGamingPageHome = () => {
       <img className='imgBanner' src={require("../assests/SUITwallpaper.webp")} />
 
       <div className='womensfashionContainer'>
-   <div className='womensfashionsubContainer'>
+   <div className='womensfashionsubContainer movedownMar'>
           <div className='womensfashionsubContainerIMG imgIcrShoe'><img style={{transform:'scale(.7, .8'}} src={require('../assests/newwallpapers/newshoeedit.jpg')}/></div>
           <div className='womensfashionLink LEFTmARGIN'>
             <div className='linktitle'>
@@ -855,7 +855,7 @@ const navigateGamingPageHome = () => {
             <div className='womensfashionsubContainerIMG moveIMG'></div>
         </div>
 
-        <div className='womensfashionsubContainer'>
+        <div className='womensfashionsubContainer suitFlowdiv'>
           <div className='womensfashionsubContainerIMG imgIcr imgIcrsuit'><img src={require('../assests/newwallpapers/newsuit3edit.jpg')} style={{transform:'scaleX(-1)'}}/></div>
           <div className='womensfashionLink'>
             <div className='linktitle'>

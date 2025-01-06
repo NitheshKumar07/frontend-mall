@@ -6,9 +6,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 
-body button, body a, body li{
+
+*:focus{
+    outline: none;
+}
+
+a:active, button:active{
+    outline: none;
+    background-color: transparent;
+}
+
+
+button,a,li{
     user-select: none;
 }
+/* a:hover, li:hover{
+    background-color: transparent;
+} */
+a:focus, button:focus, input:focus{
+    outline: none;
+    background-color: transparent;
+}
+
+
+
 
 .niteshLogo{
     width: 4pc;
@@ -1757,7 +1778,7 @@ body.no-scroll {
     }
     .slder-subContainer{
         gap: 11px;
-        height: 420px;
+        height: 480px;
     }
     .slider-images:first-child, .slider-images:last-child{
         height: 250px;
@@ -2056,6 +2077,33 @@ body.no-scroll {
         left: -10%;
     }
 }
+@media (min-width:501px) and (max-width: 600px){
+    .slider-images{
+        width: 10%;
+    }
+    .slder-subContainer{
+        gap: 5px;
+        height: 360px;
+    }
+    .slider-images:first-child, .slider-images:last-child{
+        height: 180px;
+    }
+    .slider-images:nth-child(2), .slider-images:nth-child(6){
+        height: 205px;
+    }
+    .slider-images:nth-child(3), .slider-images:nth-child(4), .slider-images:nth-child(5){
+        height: 255px;
+    }
+    .slider-images.activeImg{
+        width: 300px;
+        height:290px;
+    }
+    .slider-container h4{
+        font-size:1.3em;
+        top: 50%;
+        left: -30%;
+    }
+}
 @media (min-width:501px) and (max-width: 850px){
     .soloShoeImg-Container{
         width: auto;
@@ -2089,7 +2137,7 @@ body.no-scroll {
         display: block;
     }
 }
-@media (min-width:501px) and (max-width: 1024px){
+@media (min-width:761px) and (max-width: 1024px){
     .womensfashionsubContainerIMG img{
         max-height: 25pc;
     }
@@ -2107,6 +2155,12 @@ body.no-scroll {
     .linktitle p{
         width: 90%;
     }
+    .imgIcrShoe{
+        margin-left: -5pc;
+    }
+}
+@media (min-width:501px) and (max-width: 1024px){
+
     .btnarrow-move button{    
         font-size: .8em;
         letter-spacing: .8px;
@@ -2645,6 +2699,10 @@ body.no-scroll {
     .moveIMG{
         height: 15pc;
         width: 40pc;
+        margin-bottom: 2pc;
+    }
+    .imgIcrShoe{
+        margin-left: -2pc;
     }
     .womensfashionsubContainer{
         margin-bottom: -8pc;
@@ -2789,6 +2847,13 @@ body.no-scroll {
     }
     .super-box{
         justify-content: center;
+    }
+}
+
+@media (min-width: 470px) and (max-width: 500px) {
+    .slider-images:first-child, .slider-images:last-child{
+        display: block;
+        height: 6pc;
     }
 }
 
@@ -3412,11 +3477,20 @@ body.no-scroll {
     }
     .sareeFlow img{
         width: 11pc;
-        height:11pc;
+        height:10pc;
     }
     .imgIcrbag{
-        width: 10pc;
+        width: 9pc;
         margin-right: 2pc;
+    }
+
+}
+@media  (min-width:366px) and (max-width: 399px) {
+    .sareeFlowdiv{
+        margin-top: 2pc;
+    }
+    .suitFlowdiv{
+        margin-top: 3pc;
     }
 }
 
@@ -3446,7 +3520,7 @@ body.no-scroll {
     }
     .sareeFlow img{
         width: 11pc;
-        height:11pc;
+        height:10pc;
     }
     .imgIcrbag{
         width: 10pc;
@@ -3466,7 +3540,7 @@ body.no-scroll {
     }
     .sareeFlow img{
         width: 11pc;
-        height:11pc;
+        height:10pc;
     }
     .moveIMG{
         height: 12pc;
@@ -3582,6 +3656,97 @@ body.no-scroll {
     .moveShoeTitle{
         width: 15PC;
         font-size: 1.1em;
+    }
+}
+@media (min-width: 501px) and (max-width: 579px){
+.homeBagmove{
+    display: none;
+}
+}
+@media (min-width: 501px) and (max-width: 600px){
+    .womensfashionsubContainerIMG{
+        height: 22pc;
+    }
+    .womensfashionsubContainerIMG img{
+        max-height: 18pc;
+    }
+    .sareeFlow img{
+        max-height: 15pc;
+        width: 18pc;
+        margin-top: 4pc;
+    }
+    .moveIMG{
+        min-width: 14pc;
+        max-width: 15pc;
+        max-height:15pc;
+        margin-top: 3pc;
+    }
+    .linktitle h3{
+        font-size: 1.8em;
+    }
+    .linktitle p{
+        font-size: 1.1em;
+    }
+    .imgIcrShoe img{
+        height: 15pc;
+        margin-top: 3pc;
+    }
+    .imgIcrShoe{
+        margin-left: -2.2pc;
+    }
+    .imgIcrbag{
+        margin-top: 3pc;
+    }
+}
+@media (min-width: 601px) and (max-width: 760px){
+    .womensfashionsubContainerIMG img{
+        max-height: 20pc;
+    }
+    .sareeFlow img{
+        max-height: 20pc;
+        width: 22pc;
+        margin-top: 4pc;
+    }
+    .sareeFlow{
+        margin-top: 3pc;
+    }
+    .imgIcrsuit img{
+        margin-top: 4pc;
+    }
+    .moveIMG{
+        min-width: 14pc;
+        width: 45pc;
+        max-height:18pc;
+        margin-top: 3.5pc;
+    }
+    .imgIcrShoe{
+        margin-left: -4pc;
+    }
+    .imgIcrShoe img{
+        margin-top: 3pc;
+    }
+    .imgIcrbag img{
+        margin-top: 6pc;
+    }
+    .imgIcrbag{
+        margin-top: -3pc;
+    }
+    .linktitle h3{
+        font-size: 2.1em;
+    }
+    .linktitle p{
+        font-size: 1.3em;
+    }
+    .imgIcrchudi img{
+        margin-top: 3pc;
+    }
+}
+@media screen and (max-width: 500px){
+    .movedownMar{
+        margin-top: 5pc;
+    }
+    .imgIcrShoe img{
+        margin-top: -1pc;
     }
 }
 footer{
