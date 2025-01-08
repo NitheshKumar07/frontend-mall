@@ -16,7 +16,7 @@ const Layout = () => {
   let differenctPageMargin = '';
   if(path === '/chudidarpage' || path === '/sareepage' || path === '/handbagpage' || path === '/shoepage' || path === '/suitpage' || path === '/jeanspage'
     || path === '/laptoppage'  || path === '/phonepage' || path === '/tvpage' || path === '/acpage' || path === '/fridgepage' || path === '/gamepage' 
-    || path === '/watchpage' || path === '/wishlist' || path === '/solosaree'
+    || path === '/watchpage' || path === '/wishlist' || path === '/solosaree' || path === '/seecart'
    )
     {
     differenctPageMargin = 'allmargin';

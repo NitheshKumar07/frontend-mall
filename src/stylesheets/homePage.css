@@ -51,7 +51,7 @@ ul, li, a, button, input, #hello{
 .allmargin{
     width: 90%;
     margin: 5% auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 .defaultmargin{
     margin: 5% 0 0 0%;
@@ -108,6 +108,37 @@ body{
     }
 }
 /* ........................................................................... */
+.paymentImagesPara{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.unsupport{
+    align-self: flex-end;
+    color: black;
+    font-size: .78rem;
+    text-align: right;
+    min-width: 20%;
+    opacity: .9;
+}
+.cart-subtotal-div, .cart-subtotal-divMobile, .wish-subtotal-divMobile{
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 600;
+    width: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+}
+.wish-subtotal-divMobile{
+font-size: .92em;
+gap: 0;
+}
+.cart-heading p{
+    font-weight: 650;
+    font-size: .88rem;
+}
  .cart-svg{
     position: relative;
 }
@@ -188,14 +219,15 @@ body{
     font-family: kanit;
     z-index: 98;
     transition: all 1s ease;
-    width:90pc ;
-    height: 55vh;
+    width:90pc;
+    height: 48vh;
     display: none;
     background: url('../assests/wallbg.jpg') right/cover;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: lightgray;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius:10px;
 }
 .watchimage{
     background: url('../assests/watchbanner.webp') right/cover;
@@ -3219,6 +3251,15 @@ body.no-scroll {
     .paymentContainer{
         margin-top:-10px;
     }
+    .paymentSubContainer p:not(.unsupport){
+        font-size: .75em;
+    }
+    .unsupport{
+        font-size: .65rem;
+    }
+    .paymentImagesPara{
+        gap: 5px;
+    }
     #wish-item-name{
         font-size: .85em;
     }
@@ -3768,11 +3809,17 @@ body.no-scroll {
     }
 }
 @media screen and (min-width: 500px){
+    .cart-subtotal-div{
+        flex-direction: row;
+    }
     #mall-logo{
         margin-left: .8pc;
     }
 }
 @media screen and (max-width: 500px){
+    #cart-label{
+        margin-left: 1.5pc;
+    }
     .two-btns{
         margin-top:1pc;
     }
@@ -3834,6 +3881,101 @@ body.no-scroll {
     }
     .soloItem-complete-price p, #soloItem-discount{
         font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 901px) and (max-width:950px){
+    .cart-main-div{
+        gap: 18px;
+    }
+    .cart-heading{
+        gap:65px;
+    }
+}
+@media (min-width: 501px) and (max-width:610px){
+    .cart-main-div{
+        gap: 15px;
+    }
+    .cart-heading{
+        gap:55px;
+    }
+    #cart-item-name, .cart-heading p{
+        font-size: .79em;
+    }
+    .cart-quantity-div{
+        margin-left: -1.8pc;
+    }
+    #cart-item-name{
+        margin-left: -1pc;
+    }
+}
+@media (min-width: 600px) and (max-width:900px){
+    .orderContainer{
+        width: 70%;
+    }
+}
+@media (max-width: 500px){
+    .orderContainer{
+        width: 100%;
+        margin: auto;
+    }    
+}
+@media (min-width: 421px) and (max-width:499px){
+    .cart-subtotal-divMobile{
+        display: none;
+    }
+}
+@media (min-width: 421px){
+.wish-subtotal-divMobile{
+    display: none;
+}
+}
+@media (max-width: 420px){
+    .cart-subtotal-div{
+        display: none;
+    }
+    .cart-subtotal-divMobile{
+        font-size: .92em;
+        gap: 0;
+    }
+    .cart-img{
+        height:120px;
+        width: 120px;
+    }
+}
+@media (max-width: 350px){
+    .cart-img{
+        height:90px;
+        width: 90px;
+    }
+    .priceLett p{
+        font-size: small;
+    }
+    #payAmt{
+        font-size: 1.1em;
+    }
+}
+@media (min-width: 351px){
+    #payAmt{
+        font-size: 1.26em;
+    }
+}
+@media (max-width: 385px){
+    #succ{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 500px) and (max-width:825px){
+    .wishKa-img{
+        height:110px;
+        width: 110px;
+    }
+    #wish-item-name{
+        /* font-size: .85em; */
+    }
+    #wish-title{
+        width:100%;
+        font-size: .9em;
     }
 }
 footer{
@@ -4030,10 +4172,7 @@ footer{
     padding: 15px 0;
     margin-top:22px;
 }
-.cart-heading p{
-    font-weight: 650;
-    font-size: .88rem;
-}
+
 .item-main-container{
     display: flex;
     width: 100%;
@@ -4171,15 +4310,7 @@ footer{
     align-items: center;
     gap: 5px;
 }
-.cart-subtotal-div{
-    display: flex;
-    gap: 6px;
-    font-weight: 600;
-    width: 80px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 .cart-clear-checkout-btns{
     display: flex;
     justify-content: flex-end;
@@ -4497,14 +4628,6 @@ footer{
     font-size: .9rem;
     width: 100%;
 }
-.unsupport{
-    align-self: flex-end;
-    color: black;
-    font-size: .78rem;
-    text-align: right;
-    min-width: 20%;
-    opacity: .9;
-}
 #paymentRadio{
     width: 20px;
     height:20px;
@@ -4514,11 +4637,6 @@ footer{
     font-weight: 550;
 }
 
-.paymentImagesPara{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 .paymentImagesSubContainer{
     display: flex;
     gap: 10px;

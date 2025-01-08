@@ -262,9 +262,15 @@ setTimeout(() => {
           <div className='quantity-cart'>{item.quantity}</div>
           <button onClick={() => updateQuantity(item._id, true)}><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>          </button>
           </div>
+          <div className='cart-subtotal-divMobile'>
           <div className='cart-subtotal-div'>
             <div>{svgRupee}</div>
             <p id='cart-item-su btotal'>{Number(item.price * item.quantity).toLocaleString('en-IN')}</p></div>
+            {item.discount && <div style={{display:'flex',gap:'4px',justifyContent:'center',alignItems:'center'}}>
+                 <p className='cart-item-offer' style={{color:'green'}}>{item.discount}%</p>
+                 <p className='cart-item-offer' style={{color:'green'}}>Off</p>
+                 </div>}
+                 </div>
         </div>
         {/* ........................................................................................ */}
       </div>
@@ -282,9 +288,22 @@ setTimeout(() => {
              <div key={index} className='wish-main-container'>
              <div className='wish-main-div'>
                <button className='cart-remove-btn' onClick={() => handleRemoveItem(item._id)}><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="18px" fill="#333"><path d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z"/></svg></button>
+               <div style={{display:'flex', flexDirection:"column", gap:'5px'}}>
                <div className='cart-img'>
                  <img src={item.photo} alt={item.title} onClick={()=>navigateSoloLaptop(item._id,item.ctgry)}/>
                </div>
+               <div className='cart-subtotal-divMobile'>
+                 <div className='wishsvgPara'>
+                <p>{svgRupee}</p>
+                <p id='cart-item-su btotal'>{Number(item.price * item.quantity).toLocaleString('en-IN')}</p>
+                </div>
+                 {item.discount && <div style={{display:'flex',gap:'4px',justifyContent:'center',alignItems:'center'}}>
+                 <p className='cart-item-offer' style={{color:'green'}}>{item.discount}%</p>
+                 <p className='cart-item-offer' style={{color:'green'}}>Off</p>
+                 </div>}
+                 </div>
+                 </div>
+               
                <div className='wish-item-info'>
                <p id='wish-item-name'>{item.brandName}</p>
                <p id='wish-title' onClick={()=>navigateSoloLaptop(item._id,item.ctgry)}>{item.title}</p>
@@ -297,14 +316,16 @@ setTimeout(() => {
             </select>
               </div>
               }</div>
-               <div className='cart-quantity-div'>
+
+
+               <div className='cart-quantity-div' >
           <button onClick={() => updateQuantity(item._id, false)}><svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#5f6368"><path d="M200-440v-80h560v80H200Z"/></svg>            </button>
           <div className='quantity-cart'>{item.quantity}</div>
           <button onClick={() => updateQuantity(item._id, true)}><svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#5f6368"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>          </button>
           </div>
                  </div>
-               <div className='cart-subtotal-div' style={{flexDirection:'column',gap:'5px'}}>
-                 <div className='wishsvgPara'>
+               <div className='cart-subtotal-div'>
+                 <div className='wishsvgPara' >
                 <p>{svgRupee}</p>
                 <p id='cart-item-su btotal'>{Number(item.price * item.quantity).toLocaleString('en-IN')}</p>
                 </div>
@@ -378,7 +399,7 @@ setTimeout(() => {
            <div className='paymentsoloImage'><img src={require('../assests/paymentImages/phonepeSmall.png')}/></div>
            <div className='paymentsoloImage'><img src={require('../assests/paymentImages/googlepaySmall.png')}/></div>
            <div className='paymentsoloImage'><img src={require('../assests/paymentImages/paytmSmall.png')}/></div>
-           <div className='paymentsoloImage'><img src={require('../assests/paymentImages/amazonpaySmall.png')}/></div>
+           {/* <div className='paymentsoloImage'><img src={require('../assests/paymentImages/amazonpaySmall.png')}/></div> */}
            <div className='paymentsoloImage'><img src={require('../assests/paymentImages/bhimSmall.png')}/></div>
            </div>
           </div>
@@ -412,7 +433,7 @@ setTimeout(() => {
           <div className='paymentsoloImage'><img src={require('../assests/paymentImages/ic_bank.png')}/></div>
           <div className='paymentsoloImage'><img src={require('../assests/paymentImages/icci_bank.png')}/></div>
           <div className='paymentsoloImage'><img src={require('../assests/paymentImages/pnb_bank_.png')}/></div>
-          <div className='paymentsoloImage'><img src={require('../assests/paymentImages/sbi_bank.png')}/></div>
+          {/* <div className='paymentsoloImage'><img src={require('../assests/paymentImages/sbi_bank.png')}/></div> */}
         </div>
         </div>
         <p className='para2'>This has low success, use UPI, cards or COD for better experience</p>
@@ -442,7 +463,8 @@ setTimeout(() => {
   <p id='succ'>Order successfully placed!</p>
   <div className='truckContainer'>
   <div className='truckdiv'><img src={require("../assests/paymentImages/icons8-truck.gif")}/></div>
-  <p id='reachingYou'>Your order is reaching to you!</p></div>
+  {/* <p id='reachingYou'>Your order is reaching to you!</p> */}
+  </div>
   <button className='placedbutton' onClick={() => navigate('/category')}>shop more</button>
 </div>
 </div>
@@ -453,32 +475,32 @@ setTimeout(() => {
       <div className= 'order-sub-container'>
         <p className='priceDetail'>PRICE DETAILS</p>
 
-        <div className='cart-totalMRP'>
+        <div className='cart-totalMRP priceLett'>
           <p>Total MRP</p>
             <p style={{display:'flex',justifyContent:'center',alignItems:'center',color:'black',fontWeight:'550'}}>{svgCartRupee}{totalPrice.toLocaleString('en-IN')}</p>
         </div>
 
-        <div >
+        <div className='priceLett'>
         <p >Total Discount</p>
         <p style={{display:'flex',justifyContent:'center',alignItems:'center',color:'black',fontWeight:'550'}}>-{svgCartRupee}{totalDiscount.toLocaleString('en-IN')}</p>
         </div>
 
-        <div>
+        <div className='priceLett'>
         <p >Delivery Charges</p>
         <p style={{display:'flex',justifyContent:'center',alignItems:'center',color:'black',fontWeight:'550'}}>{deliveryFee === 0 ? 'FREE' : (<> {svgCartRupee}{deliveryFee} </>)}</p>
         </div>
 
-        <div  className='cart-savingDiv'>
+        <div  className='cart-savingDiv priceLett'>
         <p>Your Total Savings</p>
         <p style={{display:'flex',justifyContent:'center',alignItems:'center'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='13px' height='13px' fill='rgb(226, 65, 65)'>
         <path d="M0 64C0 46.3 14.3 32 32 32l64 0 16 0 176 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-56.2 0c9.6 14.4 16.7 30.6 20.7 48l35.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-35.6 0c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256l80 0c32.8 0 61-19.7 73.3-48L32 208c-17.7 0-32-14.3-32-32s14.3-32 32-32l153.3 0C173 115.7 144.8 96 112 96L96 96 32 96C14.3 96 0 81.7 0 64z"/></svg>
           {yoursavings.toLocaleString('en-IN')}</p>
         </div>
 
-        <div className='cart-totalAmount'>
+        <div className='cart-totalAmount ttPay'>
         <p id='cart-totalpayable'>Total Payable Amount</p>
-        <p style={{display:'flex',justifyContent:'center',alignItems:'center',fontSize:'1.26em'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='.9rem' height='.93rem' fill='black'>
-        <path d="M0 64C0 46.3 14.3 32 32 32l64 0 16 0 176 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-56.2 0c9.6 14.4 16.7 30.6 20.7 48l35.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-35.6 0c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256l80 0c32.8 0 61-19.7 73.3-48L32 208c-17.7 0-32-14.3-32-32s14.3-32 32-32l153.3 0C173 115.7 144.8 96 112 96L96 96 32 96C14.3 96 0 81.7 0 64z"/></svg>          
+        <p id='payAmt' style={{display:'flex',justifyContent:'center',alignItems:'center'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width='.9rem' height='.93rem' fill='black'>
+        <path d="M0 64C0 46.3 14.3 32 32 32l64 0 16 0 176 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-56.2 0c9.6 14.4 16.7 30.6 20.7 48l35.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-35.6 0c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256l80 0c32.8 0 61-19.7 73.3-48L32 208c-17.7 0-32-14.3-32-32s14.3-32 32-32l153.3 0C173 115.7 144.8 96 112 96L96 96 32 96C14.3 96 0 81.7 0 64z"/></svg>
           {totalPayable.toLocaleString('en-IN')}</p>
         </div>
 

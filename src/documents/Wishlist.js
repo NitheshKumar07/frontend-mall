@@ -84,9 +84,23 @@ const handleRemoveWish = (id) => {
              <div key={index} className='wish-main-container'>
              <div className='wish-main-div'>
                <button className='cart-remove-btn' onClick={() => handleRemoveWish(item._id)}><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="18px" fill="#333"><path d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z"/></svg></button>
-               <div className='cart-img'>
+
+               <div style={{display:'flex', flexDirection:"column", gap:'5px'}}>
+               <div className='cart-img wishKa-img'>
                  <img src={item.photo} alt={item.title} onClick={()=>navigateSoloLaptop(item._id,item.ctgry)}/>
                </div>
+               <div className='wish-subtotal-divMobile'>
+                 <div className='wishsvgPara'>
+                <p>{svgRupee}</p>
+                <p id='cart-item-su btotal'>{Number(item.price * item.quantity).toLocaleString('en-IN')}</p>
+                </div>
+                 {item.discount && <div style={{display:'flex',gap:'4px',justifyContent:'center',alignItems:'center'}}>
+                 <p className='cart-item-offer' style={{color:'green'}}>{item.discount}%</p>
+                 <p className='cart-item-offer' style={{color:'green'}}>Off</p>
+                 </div>}
+                 </div>
+                 </div>
+                 
                <div className='wish-item-info'>
                <p id='wish-item-name'>{item.brandName}</p>
                    <p id='wish-title' onClick={()=>navigateSoloLaptop(item._id,item.ctgry)}>{item.title}</p>
