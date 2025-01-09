@@ -440,8 +440,8 @@ const user = localStorage.getItem('username')
             <img id='sareeBanner' src={require("../assests/suitsBanner.webp")} style={{marginBottom:'1pc'}}/>
     { (filteredProducts.length > 0 ? filteredProducts : mobile).map((eachMobile,index)  => {
       return (
-        <div className='chudidar-main-container' key={eachMobile._id}>
-        <div className='suitItemImg-container'>
+        <div className='chudidar-main-container bag-main-container' key={eachMobile._id}>
+        <div className='suitItemImg-container BagsuitItemImg-container'>
             <div className='suitItemImg-box' onClick={()=>navigateSoloLaptop(eachMobile._id)}>
                 <a onClick={()=>navigateSoloLaptop(eachMobile._id)}><img className='suitItem-img' alt={eachMobile.title} 
                 src={eachMobile.photo}/></a>
@@ -450,7 +450,7 @@ const user = localStorage.getItem('username')
                 </div>
         <div className='handbagItemDetails-container'>
           <p id='brandName'>{eachMobile.brandName}</p>
-          <a className='chudidarItem-name' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
+          <a className='chudidarItem-name bagItem-name' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
           <div className='handbagItemPriceDetail'>
             <div className='handbagItem-Price'>{svgRupee}<p id='mobleItem-realprice'>{Number(eachMobile.price).toLocaleString('en-IN')}</p></div>
             {eachMobile.discount && <div className='handbagItem-cancelPrice'>{svgRupeeSmall}<p id='mobleItem-cancelprice'>{Number(eachMobile.realprice).toLocaleString('en-IN')}</p>
