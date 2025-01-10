@@ -449,9 +449,9 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
     {/* <img id='phoneBanner' src={require("../assests/phoneBanner1.jpg")} style={{marginBottom:'1pc'}}/> */}
 { (filteredProducts.length > 0 ? filteredProducts : mobile).map((eachMobile,index)  => {
   return (
-    <div className='singleContainer'>
-    <div className='item-main-container mobileItem-container' key={eachMobile._id}>
-    <div className='mobileItemImg-container mobileItemImg-containerPhoneSMALL'>
+    <div className='singleContainer lapcontainer phcontainer'>
+    <div className='item-main-container tv-main-container mobileItem-container' key={eachMobile._id}>
+    <div className='mobileItemImg-container phItemImg-container  tvItemImg-container lapItemImg-container mobileItemImg-containerPhoneSMALL'>
         <div className='mobileItemImg-box' onClick={()=>navigateSoloLaptop(eachMobile._id)}>
             <a onClick={()=>navigateSoloLaptop(eachMobile._id)}><img className='mobileItem-img' alt={eachMobile.title} 
             src={eachMobile.photo}/></a>
@@ -460,7 +460,7 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
       </div>
     <div className='handbagItemDetails-container'>
       <p id='brandName'>{eachMobile.brandName}</p>
-      <a className='chudidarItem-name phoneNAME' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
+      <a className='chudidarItem-name tvItem-name lapItem-name phoneNAME' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
       <div className='handbagItemPriceDetail'>
         <div className='handbagItem-Price'>{svgRupee}<p id='mobleItem-realprice'>{Number(eachMobile.price).toLocaleString('en-IN')}</p></div>
         {eachMobile.discount && 

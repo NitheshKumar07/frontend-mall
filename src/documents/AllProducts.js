@@ -738,7 +738,7 @@ const navigateGamingPageHome = () => {
             </div>
         </div>
 
-        <div className='womensfashionsubContainer'>
+        <div className='womensfashionsubContainer chudifashionsubContainer'>
           <div className='womensfashionLink'>
             <div className='linktitle' style={{marginLeft:'10%'}}>
               <h3>Ignite Your Imagination</h3><p>revel in the unmatched glamour of our uniquely designed handbag collection</p>

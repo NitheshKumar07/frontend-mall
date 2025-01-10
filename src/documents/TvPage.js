@@ -446,9 +446,9 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
 >
 { (filteredProducts.length > 0 ? filteredProducts : mobile).map((eachMobile,index)  => {
   return (
-    <div className='singleContainer'>
+    <div className='singleContainer lapcontainer'>
     <div className='item-main-container tv-main-container mobileItem-container' key={eachMobile._id}>
-    <div className='mobileItemImg-container tvItemImg-container mobileItemImg-containerSMALL'>
+    <div className='mobileItemImg-container tvItemImg-container lapItemImg-container mobileItemImg-containerSMALL'>
         <div className='laptopItemImg-box' onClick={()=>navigateSoloLaptop(eachMobile._id)}>
             <a onClick={()=>navigateSoloLaptop(eachMobile._id)}><img className='laptopItem-img' alt={eachMobile.title} 
             src={eachMobile.photo}/></a>
@@ -457,7 +457,7 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
             </div>
     <div className='handbagItemDetails-container'>
       <p id='brandName'>{eachMobile.brandName}</p>
-      <a className='chudidarItem-name tvItem-name tvNAME' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
+      <a className='chudidarItem-name tvItem-name lapItem-name tvNAME' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
       <div className='handbagItemPriceDetail'>
         <div className='handbagItem-Price'>{svgRupee}<p id='mobleItem-realprice'>{Number(eachMobile.price).toLocaleString('en-IN')}</p></div>
         {eachMobile.discount && <div className='handbagItem-cancelPrice'>{svgRupeeSmall}<p id='mobleItem-cancelprice'>{Number(eachMobile.realprice).toLocaleString('en-IN')}</p>

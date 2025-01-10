@@ -292,14 +292,14 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
 
 <div className='filter-container filter-container1'>
 <div className='total-items'>
-<h4>SAREE</h4>
+<h4>GAMING ACCESSORIES</h4>
 <span>({filteredProducts.length} Items)</span>
 </div>
 
 <p id='filter'>FILTERS</p>
 <div className='filters-details-box'>
   <div className='filter-brandBtn-arrow-container' onClick={showFilterHandlerBrand}>
-    <button>SAREE TYPE {`(${dublicateBrand.length})`}<p>&#10094;</p></button>
+    <button>BRAND {`(${dublicateBrand.length})`}<p>&#10094;</p></button>
   </div>
   {showFilterBrand && 
   <div className='filter-checkbox'>
@@ -360,14 +360,14 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
 {showFilterContainer &&
 <div className='filter-container filter-container2'>
 <div className='total-items'>
-<h4>SAREE</h4>
+<h4>GAMING ACCESSORIES</h4>
 <span>({filteredProducts.length} Items)</span>
 </div>
 
 <p id='filter'>FILTERS</p>
 <div className='filters-details-box'>
   <div className='filter-brandBtn-arrow-container' onClick={showFilterHandlerBrand}>
-    <button>SAREE TYPE {`(${dublicateBrand.length})`}<p>&#10094;</p></button>
+    <button>BRAND {`(${dublicateBrand.length})`}<p>&#10094;</p></button>
   </div>
   {showFilterBrand && 
   <div className='filter-checkbox'>

@@ -1673,6 +1673,9 @@ body.no-scroll {
     }
 }
 @media screen and (max-width : 1024px) {
+    .handbagItem-Price #mobleItem-realprice{
+        font-size:1.3em;
+    }
     .lghtwgt p {
         font-size: small;
     }
@@ -2306,7 +2309,7 @@ body.no-scroll {
         font-size: 1.5em;
       }
     .handbagItem-Price #mobleItem-realprice{
-        font-size:1.3em;
+        font-size:1.2em;
     }    
     .super-boxChudidar{
         width:100%;
@@ -2928,7 +2931,7 @@ body.no-scroll {
         font-size: 1.5em;
       }
     .handbagItem-Price #mobleItem-realprice{
-        font-size:1.3em;
+        font-size:1.1em;
     }    
     .super-boxChudidar{
         width:100%;
@@ -3543,7 +3546,10 @@ body.no-scroll {
     }
     .imgIcrbag{
         width: 9pc;
-        margin-right: 2pc;
+        margin-right: 3.5pc;
+    }
+    .chudifashionsubContainer{
+        gap:0px;
     }
 
 }
@@ -3553,6 +3559,13 @@ body.no-scroll {
     }
     .suitFlowdiv{
         margin-top: 3pc;
+    }
+    .imgIcrbag{
+        width: 15pc;
+        margin-right:2pc;
+    }
+    .chudifashionsubContainer{
+        gap:0px;
     }
 }
 
@@ -4150,6 +4163,9 @@ body.no-scroll {
         width: 100%;
         height: 240px;
     }
+    .shoeItemImg-container{
+        height: 250px;
+    }
 }
 @media (min-width: 551px) and (max-width:600px){
     .saree-main-container, .jeans-main-container, .game-main-container, .ac-main-container, .fridge-main-container
@@ -4160,6 +4176,9 @@ body.no-scroll {
     {
         width: 100%;
         height:270px;
+    }
+    .shoeItemImg-container{
+        height: 220px;
     }
     .acItemImg-container{
         width: 100%;
@@ -4179,6 +4198,9 @@ body.no-scroll {
     {
         width: 100%;
         height:240px;
+    }
+    .shoeItemImg-container{
+        height: 200px;
     }
     .gameItem-name{
         font-size: .8em;
@@ -4223,6 +4245,9 @@ body.no-scroll {
         width: 100%;
         height:240px;
     }
+    .shoeItemImg-container{
+        height: 170px;
+    }
     .fridgeItemImg-container{
         width: 100%;
         height:200px;
@@ -4246,6 +4271,9 @@ body.no-scroll {
         width: 100%;
         height:210px;        
     }
+    .shoeItemImg-container{
+        height: 150px;
+    }
     .acItemImg-container{
         width: 100%;
         height: 180px;
@@ -4265,6 +4293,9 @@ body.no-scroll {
         width: 100%;
         height:200px;        
     }
+    .shoeItemImg-container{
+        height: 130px;
+    }
     .fridgeItemImg-container{
         width: 100%;
         height:170px;
@@ -4276,7 +4307,23 @@ body.no-scroll {
 }
 /* ......................................................................................................saree & jeans ends */
 /* .............game starts */
-@media (min-width: 1440px) and (max-width:1520px){
+@media (min-width: 1600px) and (max-width:1700px){
+    .shoe-main-container{
+        width: 270px;
+    }
+    .shoeItemImg-container{
+        height: 270px;
+    }
+}
+@media (min-width: 1521px) and (max-width:1599px){
+    .shoe-main-container{
+        width: 250px;
+    }
+    .shoeItemImg-container{
+        height: 250px;
+    }
+}
+@media (min-width: 1440px) and (max-width:1522px){
     .game-main-container, .ac-main-container, .fridge-main-container
     {
         width: 240px;
@@ -4284,6 +4331,9 @@ body.no-scroll {
     .gameItemImg-container{
         width: 100%;
         height:270px;
+    }
+    .shoeItemImg-container{
+        height: 240px;
     }
     .acItemImg-container{
         width: 100%;
@@ -4294,6 +4344,24 @@ body.no-scroll {
         width: 90%;
     }
 }
+@media (min-width: 1300px) and (max-width:1399px){
+    .shoe-main-container{
+        width: 280px;
+    }
+    .shoeItemImg-container{
+        width: 100%;
+        height: 280px;
+    }
+}
+@media (min-width: 1231px) and (max-width:1299px){
+    .shoe-main-container{
+        width: 250px;
+    }
+    .shoeItemImg-container{
+        width: 100%;
+        height: 250px;
+    }
+}
 @media (min-width: 1161px) and (max-width:1230px){
     .game-main-container, .ac-main-container, .fridge-main-container
     {
@@ -4302,6 +4370,9 @@ body.no-scroll {
     .gameItemImg-container{
         width: 100%;
         height:270px;
+    }
+    .shoeItemImg-container{
+        height: 230px;
     }
     .acItemImg-container{
         width: 100%;
@@ -4321,6 +4392,9 @@ body.no-scroll {
         width: 100%;
         height:250px;
     }
+    .shoeItemImg-container{
+        height: 210px;
+    }
     .acItemImg-container{
         width: 100%;
         height: 220px;
@@ -4339,6 +4413,9 @@ body.no-scroll {
         width: 100%;
         height:250px;
     }
+    .shoeItemImg-container{
+        height: 195px;
+    }
     .gameItem-name{
         font-size: .8em;
         width: 90%;
@@ -4353,6 +4430,9 @@ body.no-scroll {
         width: 100%;
         height:270px;
     }
+    .shoeItemImg-container{
+        height: 210px;
+    }
     .acItemImg-container{
         width: 100%;
         height: 250px;
@@ -4360,6 +4440,24 @@ body.no-scroll {
     .gameItem-name, .acItem-name{
         font-size: .8em;
         width: 90%;
+    }
+}
+@media (min-width: 980px) and (max-width:1019px){
+    .shoe-main-container{
+        width: 280px;
+    }
+    .shoeItemImg-container{
+        width: 100%;
+        height: 280px;
+    }
+}
+@media (min-width: 900px) and (max-width:979px){
+    .shoe-main-container{
+        width: 250px;
+    }
+    .shoeItemImg-container{
+        width: 100%;
+        height: 250px;
     }
 }
 @media (min-width: 830px) and (max-width:899px){
@@ -4370,6 +4468,9 @@ body.no-scroll {
     .gameItemImg-container{
         width: 100%;
         height:270px;
+    }
+    .shoeItemImg-container{
+        height: 235px;
     }
     .acItemImg-container{
         width: 100%;
@@ -4389,6 +4490,9 @@ body.no-scroll {
         width: 100%;
         height:250px;        
     }
+    .shoeItemImg-container{
+        height: 210px;
+    }
     .acItemImg-container{
         width: 100%;
         height: 260px;
@@ -4398,14 +4502,24 @@ body.no-scroll {
         width: 90%;
     }
 }
+
 @media (min-width: 701px) and (max-width:749px){
-    .ac-main-container, .fridge-main-container
+    .ac-main-container
     {
         width: 290px;
     }
     .acItemImg-container{
         width: 100%;
         height: 260px;
+    }
+}
+@media (min-width: 701px) and (max-width:725px){
+    .shoe-main-container{
+        width: 300px;
+    }
+    .shoeItemImg-container{
+        width: 100%;
+        height: 300px;
     }
 }
 @media (min-width: 650px) and (max-width:700px){
@@ -4416,6 +4530,9 @@ body.no-scroll {
     .gameItemImg-container{
         width: 100%;
         height:280px;        
+    }
+    .shoeItemImg-container{
+        height: 270px;
     }
     .acItemImg-container{
         width: 100%;
@@ -4431,12 +4548,64 @@ body.no-scroll {
         width: 100%;
         height:280px;        
     }
+    .shoeItemImg-container{
+        height: 250px;
+    }
     .acItemImg-container{
         width: 100%;
         height: 240px;
     }
 }
 /* ...........................geame ends...... */
+/* ........laptop mobile starts */
+@media (min-width: 800px) and (max-width:870px){
+    .lapcontainer{
+        width: 235px;
+    }
+    .lapItemImg-container{
+        width:98%;
+        height:235px;
+    }
+    .lapItem-name{
+        width: 90%;
+    }
+}
+@media (min-width: 721px) and (max-width:799px){
+    .lapcontainer{
+        width: 210px;
+    }
+    .lapItemImg-container{
+        width:98%;
+        height:210px;
+    }
+    .lapItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 650px) and (max-width:720px){
+    .lapcontainer{
+        width: 185px;
+    }
+    .lapItemImg-container{
+        width:98%;
+        height:220px;
+    }
+    .lapItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 474px) and (max-width:479px){
+    .phcontainer{
+        width: 210px;
+    }
+    .phItemImg-container{
+        width:98%;
+        height:210px;
+    }
+}
+/* ....................laptop mobile ends */
 /* .............................................chudidar starts */
 @media (min-width: 1445px) and (max-width:1455px){
     .lahengaSuitItemImg-container, .sareeItemImg-container{
@@ -4494,7 +4663,7 @@ body.no-scroll {
         width: 100%;
     }
     .salwar-main-container{
-        width: 205px;
+        width: 200px;
     }
     .lahengaSuitItemImg-container{
         width: 100%;
@@ -6285,6 +6454,16 @@ footer{
     box-shadow: 1px 1px 10px gray, -1px -1px 10px gray;
     transition: all .3s ease;
  }
+ .filter-container2{
+    right:1%;
+    top: 24%;
+    height:auto;
+ }
+ @media screen and (min-width:500px) {
+    .filter-container2{
+        top: 20%;
+    }        
+ }
 .svgfilterDiv{
     position: fixed;    
     right: 2%;
@@ -6423,4 +6602,10 @@ footer{
 }
 .soloItemDescription-BOX{
     margin-top: .8pc;
+}
+.imgIcrbag{
+    margin-right: .8%;
+}
+.sideAdd{
+    user-select: none;
 }
