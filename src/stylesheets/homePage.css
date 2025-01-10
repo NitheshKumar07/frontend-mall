@@ -27,6 +27,10 @@ a:focus, button:focus, input:focus{
     background-color: transparent;
 } */
 /* ............................................................. */
+.fridgeItemImg-container{
+    width: 100%;
+    height:240px;
+}
 
 ul, li, a, button, input, #hello{
     user-select: none;
@@ -4031,112 +4035,411 @@ body.no-scroll {
 }
 }
 
-/* .................................................................saree */
+/* .................................................................saree & jeans */
+@media (min-width: 1300px) and (max-width:1435px){
+    .jeans-main-container, .saree-main-container{
+        width:280px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container{
+    width: 100%;
+    height:400px;
+    }
+}
+@media (min-width: 1200px) and (max-width:1299px){
+    .jeans-main-container, .saree-main-container{
+        width:250px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container{
+    width: 100%;
+    height:400px;
+    }
+}
+@media (min-width: 1100px) and (max-width:1199px){
+    .jeans-main-container, .saree-main-container{
+        width:220px;
+    }
+    .sareeItemImg-container, 
+    .jeansItemImg-container{
+    width: 100%;
+    height:380px;
+    }
+    .sareeItem-name{
+        width:100%;
+    }
+}
+
+
 @media (min-width: 1025px) and (max-width:1069px){    
-    .sareeItemImg-container{
+    .sareeItemImg-container, .jeansItemImg-container{
     width: 300px;
     height:500px;
     }
 }
 @media (min-width: 1020px) and (max-width:1023px){
-    .sareeItemImg-container{
+    .sareeItemImg-container, .jeansItemImg-container{
         width: 310px;
         height:500px;
     }    
 }
+
+@media (min-width: 968px) and (max-width:1019px){
+    .sareeItemImg-container, .jeansItemImg-container{
+        width: 280px;
+        height:480px;
+    }    
+}
+@media (min-width: 880px) and (max-width:967px){
+    .saree-main-container, .jeans-main-container{
+        width: 250px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container{
+        width: 100%;
+        height:440px;
+    }    
+}
+@media (min-width:790px) and (max-width:879px){
+    .saree-main-container, .jeans-main-container{
+        width: 220px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container{
+        width: 100%;
+        height:380px;
+    }  
+    .sareeItem-name, .jeansItem-name{
+        font-size: 0.85em;
+        width:100%;
+    }  
+}
+
 @media (min-width: 501px) and (max-width:750px){
-    .sareeItemImg-container
-    /* ,.jeansItemImg-container */
+    .sareeItemImg-container,.jeansItemImg-container
      {
         width: 280px;
     }
+    .super-box{
+        margin-top: 1pc;
+    }
 }
 @media (min-width: 501px) and (max-width:661px){
-    .sareeItem-name{
+    .sareeItem-name, .jeansItem-name{
         font-size: 0.8em;
         width:100%;
     }
 }
 @media (min-width: 601px) and (max-width:661px){
-    .saree-main-container{
+    .saree-main-container, .jeans-main-container{
         width: 240px;
     }
-    .sareeItemImg-container
-    /* ,.jeansItemImg-container */
+    .sareeItemImg-container, .jeansItemImg-container
      {
         width: 100%;
         height:380px;
     }
 }
-@media (min-width: 551px) and (max-width:600px){
-    .saree-main-container
-    /* , .handbag-main-container, .item-main-container */
+@media (min-width: 601px) and (max-width:615px){
+    .game-main-container, .ac-main-container, .fridge-main-container
     {
-        width: 220px;
+        width: 250px;
     }
-    .sareeItemImg-container
-    /* , .jeansItemImg-container */
-    {
-        width: 100%;
-        height:350px;
-    }
-}
-@media (min-width: 460px) and (max-width:550px){
-    .saree-main-container
-    /* , .handbag-main-container, .item-main-container */
-    {
-        width: 200px;
-    }
-    .sareeItemImg-container
-    /* , .jeansItemImg-container */
-    {
-        width: 100%;
-        height:350px;
-    }
-}
-@media screen and (max-width:414px){
-    .saree-main-container
-    /* , .handbag-main-container, .item-main-container */
-    {
-        width: 170px;
-    }
-    .sareeItemImg-container
-    /* , .jeansItemImg-container */
-    {
-        width: 100%;
-        height:300px;
-    }
-}
-@media screen and (max-width:395px){
-    .saree-main-container
-    /* , .handbag-main-container, .item-main-container */
-    {
-        width: 150px;
-    }
-    .sareeItemImg-container
-    /* , .jeansItemImg-container */
-    {
-        width: 100%;
-        height:290px;
-    }
-}
-@media screen and (max-width:355px){
-    .saree-main-container
-    /* , .handbag-main-container, .item-main-container */
-    {
-        width: 130px;
-    }
-    .sareeItemImg-container
-    /* , .jeansItemImg-container */
+    .gameItemImg-container
     {
         width: 100%;
         height:270px;
     }
+    .acItemImg-container{
+        width: 100%;
+        height: 240px;
+    }
 }
-/* ......................................................................................................saree ends */
+@media (min-width: 551px) and (max-width:600px){
+    .saree-main-container, .jeans-main-container, .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 220px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container, .gameItemImg-container
+    {
+        width: 100%;
+        height:270px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 220px;
+    }
+    .gameItem-name, .acItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 501px) and (max-width:550px){
+    .game-main-container, .fridge-main-container
+    {
+        width: 200px;
+    }
+    .gameItemImg-container
+    {
+        width: 100%;
+        height:240px;
+    }
+    .gameItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 460px) and (max-width:550px){
+    .saree-main-container, .ac-main-container
+    {
+        width: 200px;
+    }
+    .sareeItemImg-container
+    {
+        width: 100%;
+        height:350px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 210px;
+    }
+    .acItem-name{
+        font-size: .88em;
+        width: 90%;
+    }
+}
+@media screen and (max-width:415px){
+    .super-box{
+    margin-top: 1pc;
+    }
+}
+@media screen and (max-width:414px){
+    .saree-main-container, .jeans-main-container, .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 170px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container
+    {
+        width: 100%;
+        height:300px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:240px;
+    }
+    .fridgeItemImg-container{
+        width: 100%;
+        height:200px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 200px;
+    }
+}
+@media screen and (max-width:395px){
+    .saree-main-container, .jeans-main-container, .game-main-container,.ac-main-container, .fridge-main-container
+    {
+        width: 150px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container
+    {
+        width: 100%;
+        height:290px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:210px;        
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 180px;
+    }
+}
+@media screen and (max-width:355px){
+    .saree-main-container, .jeans-main-container, .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 130px;
+    }
+    .sareeItemImg-container, .jeansItemImg-container
+    {
+        width: 100%;
+        height:270px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:200px;        
+    }
+    .fridgeItemImg-container{
+        width: 100%;
+        height:170px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 150px;
+    }
+}
+/* ......................................................................................................saree & jeans ends */
+/* .............game starts */
+@media (min-width: 1440px) and (max-width:1520px){
+    .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 240px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:270px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 240px;
+    }
+    .gameItem-name, .acItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 1161px) and (max-width:1230px){
+    .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 230px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:270px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 220px;
+    }
+    .gameItem-name, .acItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 1081px) and (max-width:1160px){
+    .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 210px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:250px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 220px;
+    }
+    .gameItem-name, .acItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 1025px) and (max-width:1080px){
+    .game-main-container, .fridge-main-container
+    {
+        width: 195px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:250px;
+    }
+    .gameItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 1020px) and (max-width:1024px){
+    .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 210px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:270px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 250px;
+    }
+    .gameItem-name, .acItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 830px) and (max-width:899px){
+    .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 235px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:270px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 260px;
+    }
+    .gameItem-name, .acItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 750px) and (max-width:829px){
+    .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 210px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:250px;        
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 260px;
+    }
+    .gameItem-name, .acItem-name{
+        font-size: .8em;
+        width: 90%;
+    }
+}
+@media (min-width: 701px) and (max-width:749px){
+    .ac-main-container, .fridge-main-container
+    {
+        width: 290px;
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 260px;
+    }
+}
+@media (min-width: 650px) and (max-width:700px){
+    .game-main-container, .ac-main-container, .fridge-main-container
+    {
+        width: 270px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:280px;        
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 240px;
+    }
+}
+@media (min-width: 616px) and (max-width:649px){
+    .game-main-container, .ac-main-container
+    {
+        width: 250px;
+    }
+    .gameItemImg-container{
+        width: 100%;
+        height:280px;        
+    }
+    .acItemImg-container{
+        width: 100%;
+        height: 240px;
+    }
+}
+/* ...........................geame ends...... */
 /* .............................................chudidar starts */
 @media (min-width: 1445px) and (max-width:1455px){
-    .lahengaSuitItemImg-container{
+    .lahengaSuitItemImg-container, .sareeItemImg-container{
         width: 310px;
         height:430px;
     }
@@ -4340,6 +4643,412 @@ body.no-scroll {
 }
 }
 /* .........................................................................bag ends */
+/* ...............jeans page */
+@media (min-width: 501px) and (max-width:550px){
+    .jeans-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width: 200px;
+    }
+    .jeansItemImg-container
+    {
+        width: 100%;
+        height:350px;
+    }
+}
+/* ...................jeans page ends */
+
+/* ....................watch starts................................ */
+@media (min-width: 1551px) and (max-width:1665px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:260px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:250px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 1501px) and (max-width:1550px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:250px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:250px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 1440px) and (max-width:1500px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:240px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:235px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 1301px) and (max-width:1335px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:280px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:270px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 1201px) and (max-width:1300px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:250px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:240px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 1100px) and (max-width:1665px){
+    .watchItem-name{
+    font-size: .82em;
+}
+}
+@media (min-width: 1100px) and (max-width:1200px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:220px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:215px;
+        }
+        .watchItem-name{
+            font-size: .85em;
+            width: 90%;
+        }
+}
+@media (min-width: 1030px) and (max-width:1099px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:280px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:280px;
+        }
+}
+@media (min-width: 900px) and (max-width:999px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:258px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:255px;
+        }
+        .watchItem-name{
+            width: 100%;
+        }
+}
+@media (min-width: 800px) and (max-width:899px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:228px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:225px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 700px) and (max-width:799px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:195px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:190px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 601px) and (max-width:682px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:250px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:250px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 551px) and (max-width:600px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:225px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:230px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media (min-width: 501px) and (max-width:550px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:200px; 
+    }
+        /* .shoeItemImg-box, */
+        .watchItemImg-container{
+            width: 100%;        
+            height:180px;
+        }
+        .watchItem-name{
+            width: 90%;
+        }
+}
+@media screen and (max-width:414px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        width:175px; 
+    }
+
+    /* .shoeItemImg-box, */
+     .watchItemImg-container{
+        width: 100%;        
+        height:180px;
+    }
+    .watchItem-name{
+        width: 90%;
+    }
+}
+@media screen and (max-width:404px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        /* margin: 5px 2px; */
+        width:165px; 
+        /* width: 190px; */
+    }
+
+    /* .shoeItemImg-box, */
+     .watchItemImg-container{
+        width: 100%;        
+        height:165px;
+    }
+    .watchItem-name{
+        width: 100%;
+    }
+}
+@media screen and (max-width:383px){
+    .watch-main-container
+    /* , .handbag-main-container, .item-main-container */
+    {
+        /* margin: 5px 2px; */
+        width:140px; 
+        /* width: 190px; */
+    }
+
+    /* .shoeItemImg-box, */
+     .watchItemImg-container{
+        width: 100%;        
+        height:140px;
+    }
+    .watchItem-name{
+        width: 100%;
+    }
+
+}
+@media (min-width: 501px) and (max-width:682px){
+    .watchItem-name{
+        font-size:.78em;
+    }
+
+}
+@media (min-width: 700px) and (max-width:999px){
+    .watchItem-name{
+        font-size:.8em;
+    }
+
+}
+/* ......................watch ends.............................. */
+/* .................................................................... tv starts*/
+@media (min-width: 1445px) and (max-width:1580px){
+    .singleContainer{
+        width: 310px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:250px;
+    }
+}
+@media (min-width: 1030px) and (max-width:1200px){
+    .singleContainer{
+        width: 300px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:250px;
+    }
+}
+@media (min-width: 1021px) and (max-width:1029px){
+    .singleContainer{
+        width: 300px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:250px;
+    }
+}
+@media (min-width: 550px) and (max-width:598px){
+    .singleContainer{
+        width: 230px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:230px;
+    }
+    .tvItem-name{
+        width: 90%;
+    }
+}
+@media (min-width: 501px) and (max-width:549px){
+    .singleContainer{
+        width: 210px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:230px;
+    }
+    .tvItem-name{
+        width: 90%;
+    }
+}
+@media (min-width: 466px) and (max-width:474px){
+    .singleContainer{
+        width: 210px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:230px;
+    }
+    .tvItem-name{
+        width: 90%;
+    }
+}
+@media (min-width: 415px) and (max-width:465px){
+    .singleContainer{
+        width: 190px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:230px;
+    }
+    .tvItem-name{
+        width: 90%;
+    }
+}
+@media (min-width: 401px) and (max-width:425px){
+    .singleContainer{
+        width: 170px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:200px;
+    }
+    .tvItem-name{
+        width: 90%;
+    }
+}
+@media (min-width: 366px) and (max-width:400px){
+    .singleContainer{
+        width: 160px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:200px;
+    }
+    .tvItem-name{
+        width: 90%;
+    }
+}
+@media screen and (max-width:365px){
+    .singleContainer{
+        width: 140px;
+    }
+    .tvItemImg-container{
+        width:98%;
+        height:180px;
+    }
+    .tvItem-name{
+        width: 90%;
+    }
+}
+/* .................................................................... tv ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

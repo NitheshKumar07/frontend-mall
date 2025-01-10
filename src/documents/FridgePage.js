@@ -446,7 +446,7 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
     <div className='super-box'>
     { (filteredProducts.length > 0 ? filteredProducts : mobile).map((eachMobile,index)  => {
       return (
-        <div className='chudidar-main-container' key={eachMobile._id}>
+        <div className='chudidar-main-container fridge-main-container' key={eachMobile._id}>
         <div className='fridgeItemImg-container'>
             <div className='laptopItemImg-box' onClick={()=>navigateSoloLaptop(eachMobile._id)}>
                 <a onClick={()=>navigateSoloLaptop(eachMobile._id)}><img className='laptopItem-img' alt={eachMobile.title} 
@@ -456,7 +456,7 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
                 </div>
         <div className='handbagItemDetails-container'>
           <p id='brandName'>{eachMobile.brandName}</p>
-          <a className='chudidarItem-name' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
+          <a className='chudidarItem-name gameItem-name' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
           <div className='handbagItemPriceDetail'>
             <div className='handbagItem-Price'>{svgRupee}<p id='mobleItem-realprice'>{Number(eachMobile.price).toLocaleString('en-IN')}</p></div>
             {eachMobile.discount && <div className='handbagItem-cancelPrice'>{svgRupeeSmall}<p id='mobleItem-cancelprice'>{Number(eachMobile.realprice).toLocaleString('en-IN')}</p>

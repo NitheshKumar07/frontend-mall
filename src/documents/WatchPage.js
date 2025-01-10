@@ -438,10 +438,10 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
 }
 {FiltererrorMessage ? (<p id='noMatch'>{'No product matches the filter.'}</p>) :
 <div className='super-box'>
-  <img id='watchBanner' src={require("../assests/watchBanner2.webp")} style={{marginBottom:'1pc'}}/>
+  {/* <img id='watchBanner' src={require("../assests/watchBanner2.webp")} style={{marginBottom:'1pc'}}/> */}
 { (filteredProducts.length > 0 ? filteredProducts : mobile).map((eachMobile,index)  => {
   return (
-    <div className='chudidar-main-container' key={eachMobile._id}>
+    <div className='chudidar-main-container watch-main-container' key={eachMobile._id}>
     <div className='watchItemImg-container'>
         <div className='suitItemImg-box' onClick={()=>navigateSoloLaptop(eachMobile._id)}>
             <a onClick={()=>navigateSoloLaptop(eachMobile._id)}><img className='suitItem-img' alt={eachMobile.title} 
@@ -451,7 +451,7 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
             </div>
     <div className='handbagItemDetails-container'>
       <p id='brandName' style={{textTransform:'uppercase'}}>{eachMobile.brandName}</p>
-      <a className='chudidarItem-name' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
+      <a className='chudidarItem-name watchItem-name' id='handbagItem-name-ID' onClick={()=>navigateSoloLaptop(eachMobile._id)}>{eachMobile.title}</a>
       <div className='handbagItemPriceDetail'>
         <div className='handbagItem-Price'>{svgRupee}<p id='mobleItem-realprice'>{Number(eachMobile.price).toLocaleString('en-IN')}</p></div>
         {eachMobile.discount && <div className='handbagItem-cancelPrice'>{svgRupeeSmall}<p id='mobleItem-cancelprice'>{Number(eachMobile.realprice).toLocaleString('en-IN')}</p>
