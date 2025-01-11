@@ -49,6 +49,8 @@ const [cartMessage, setcartMessage] = useState('') //cart added message
 const [messageVisible, setmessageVisible] = useState(false);
 const [cartLoading, setcartLoading] = useState({});
 
+const shoeSizes = ['7', '8', '10', '11'];
+
 
   const svgRupee=<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className='bigRupee'>
     <path d="M0 64C0 46.3 14.3 32 32 32l64 0 16 0 176 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-56.2 0c9.6 14.4 16.7 30.6 20.7 48l35.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-35.6 0c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256l80 0c32.8 0 61-19.7 73.3-48L32 208c-17.7 0-32-14.3-32-32s14.3-32 32-32l153.3 0C173 115.7 144.8 96 112 96L96 96 32 96C14.3 96 0 81.7 0 64z"/></svg>
@@ -193,8 +195,16 @@ const deleteYes = () => {
 const deleteNo = () => {
   document.querySelector('.delete-container').style.display='none'    
 }
+const addSizeOK = () => {
+  document.querySelector('.addCart-container').style.display='none'    
+}
 // cart
 const handleAddtoCart = (productDetails,index) => {
+  const selectedSize = document.querySelector(`input[name="ShoeSize-${index}"]:checked`)?.value; 
+  if(!selectedSize){
+    document.querySelector('.addCart-container').style.display='flex';
+    return;
+  }
   const product = {
     brandName: productDetails.brandName,
     _id: productDetails._id,
@@ -202,7 +212,7 @@ const handleAddtoCart = (productDetails,index) => {
     price: productDetails.price,
     realprice: productDetails.realprice,
     discount: productDetails.discount,
-    size: productDetails.size,
+    size: selectedSize,
     photo: productDetails.photo,
     colour: productDetails.colour,
     ctgry: productDetails.ctgry
@@ -288,6 +298,14 @@ return (<>
       <div className='confirm-btns'>
       <button id='delete-yes' onClick={()=>deleteNo()}>NO</button>
       <button id='delete-no' onClick={()=>deleteYes()}>DELETE</button>
+      </div>
+    </div>
+  </div>
+  <div className='addCart-container'>
+    <div className='addCart-box'>
+      <p id='delete-para'>please choose size</p>
+      <div className='confirm-btns'>
+      <button id='delete-yes' onClick={()=>addSizeOK()}>OK</button>
       </div>
     </div>
   </div>
@@ -457,6 +475,16 @@ errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
         {eachMobile.discount && <div className='handbagItem-cancelPrice'>{svgRupeeSmall}<p id='mobleItem-cancelprice'>{Number(eachMobile.realprice).toLocaleString('en-IN')}</p>
          <p id='handbagitem-discount'>{eachMobile.discount} % off</p></div>}
       </div>
+      <div className='sizeChartALL'>
+        <div className="shoe-sizes-container shoe-sizes-containerALL">
+     {shoeSizes.map((size) => (
+            <div key={size} className='sizeKey'>
+                <input type="radio" value={size} name={`ShoeSize-${index}`} id={`size-${index}-${size}`} />
+                <label htmlFor={`size-${index}-${size}`}>{size}</label>
+            </div>
+        ))}
+     </div>
+    </div>
       <button className='items-Cart' id='items-card-ID' onClick={()=>handleAddtoCart(eachMobile,index)}>{statuscartlabel & cartLoading[index] ? (<SmallLoader/>):(<> {cartlabel}</>)}</button>
        {showADDnew && <div className='upd-del'>
           <button id='updateItem' onClick={() => updateProduct(eachMobile._id)}>Update</button>

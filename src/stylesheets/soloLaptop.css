@@ -204,7 +204,7 @@
 #soloItemDescription-BOX-ID{
     background-color: #e9ecefa3;
 }
-.sizeChart input{
+.sizeChart input, .sizeChartALL input{
     display: none;
 }
 .sizeChart label{
@@ -214,8 +214,29 @@
     background-color: #e9ecefa3;
     margin: 6px 10px 10px 0 ;
     border-radius: 4px;
+    cursor: pointer;
 }
-.sizeChart input:checked + label{
+.sizeChartALL label{
+    cursor: pointer;
+}
+.sizeChartALL{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.shoe-sizes-containerALL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sizeChartALL label{
+    display: inline-block;
+    /* text-align: center; */
+    background-color: #e9ecefa3;
+    padding: .2pc .5pc;
+    border-radius: 4px;
+}
+.sizeChart input:checked + label, .sizeChartALL input:checked + label{
     background-color: #262626;
     color: #fff;
 }

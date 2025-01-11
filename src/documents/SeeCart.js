@@ -29,9 +29,9 @@ const SeeCart = () => {
     const [addnotchecked, setaddnotchecked] = useState(false)
 
     const sizesMap = {
-      '66e0ac832e6bda2ea8fee821' : ['7', '8', '9', '10', '11'],  //shoe sizes
-      '66e0acbc2e6bda2ea8fee823' : ['34', '36', '38', '40', '42'],  //suit sizes
-      '66e0ace82e6bda2ea8fee825' : ['28', '30', '32', '34', '36'],  //jeans sizes
+      '66e0ac832e6bda2ea8fee821' : ['7', '8', '10', '11'],  //shoe sizes
+      '66e0acbc2e6bda2ea8fee823' : ['36', '38', '40', '42'],  //suit sizes
+      '66e0ace82e6bda2ea8fee825' : ['30', '32', '34', '36'],  //jeans sizes
       '66e0ac1e2e6bda2ea8fee81d' : ['M', 'L', 'XL', 'XXL'],  //chudidar sizes
     };
     // const availableSizes = sizesMap[item.ctgry];

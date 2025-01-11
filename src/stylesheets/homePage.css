@@ -1215,7 +1215,6 @@ body.no-scroll {
     object-position:center;
 }
 @media screen and (min-width : 1025px) {
-
     .post-Container{
         padding: 2pc 3pc;
     }
@@ -5304,7 +5303,7 @@ footer{
 #shoeSlide{
     margin-right:10px;
 }
-.delete-container,.deleteADD-container,.logout-container{
+.delete-container,.deleteADD-container,.logout-container, .addCart-container{
     background-color: rgba(154, 154, 154, 0.629);
     width: 100%;
     height: 100%;
@@ -5317,7 +5316,7 @@ footer{
     z-index: 999;
     font-family: var(--standard-Montserratfont);
 }
-.delete-box{
+.delete-box, .addCart-box{
     background-color:white;
     display: flex;
     flex-direction: column;
@@ -5327,9 +5326,10 @@ footer{
     padding: 55px 55px;
     border-radius: 8px;
 }
-.delete-box P{
+.delete-box P , .addCart-box p{
     font-size: 1.25em;
 }
+
 .confirm-btns{
     display: flex;
     gap: 40px;
@@ -5342,6 +5342,20 @@ footer{
     cursor: pointer;
     font-weight:500;
     border-radius: 4px;
+}
+@media screen and (max-width: 500px) {
+    .delete-box P , .addCart-box p{
+        font-size: 1.1em;
+    }
+    .confirm-btns button{
+        font-size: 1em;
+        padding: 5px 20px;
+    }
+    
+    .delete-box, .addCart-box{
+        gap:30px;
+        padding: 45px 32px;
+    }
 }
 #delete-no{
     background-color: red;
@@ -6464,6 +6478,11 @@ footer{
         top: 20%;
     }        
  }
+ @media  (min-width:360px) and (max-width:390px) {
+    .filter-container2{
+        top:12%;
+    }        
+ }
 .svgfilterDiv{
     position: fixed;    
     right: 2%;
@@ -6608,4 +6627,40 @@ footer{
 }
 .sideAdd{
     user-select: none;
+}
+@media (min-width:851px) and (max-width:950px){
+    .soloLaptop-Container, .soloSuit-Container{
+        margin-top: 6pc;
+    }
+}
+@media (min-width:1025px) and (max-width:1160px){
+    .soloLaptop-Container, .soloSuit-Container{
+        margin-top: 6pc;
+    }
+}
+.sizeChartALL label{
+    font-size: 80%;
+}
+@media screen and (min-width:501px){
+    .sizeKey{
+        padding: 2% 5%;
+    }    
+}
+@media screen and (max-width:500px){
+    .sizeKey{
+        padding: 1% 2%;
+    }    
+}
+@media screen and (max-width:360px){
+    .sizeKey{
+        padding: 1% 1.5%;
+    }
+    .sizeChartALL label{
+        font-size: 68%;
+    }
+}
+@media (min-width:360px) and (max-width:379px){
+    .SuitsizeChartALL label{
+        font-size: 68%;
+    }
 }

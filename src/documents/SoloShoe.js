@@ -26,7 +26,7 @@ const SoloShoe = () => {
 
     const contentRef = useRef(null);
     
-    const shoeSizes = ['7', '8', '9', '10', '11'];
+    const shoeSizes = ['7', '8', '10', '11'];
 
       // new shoe slide
   const shoeMoveContainer = document.querySelector('.homeShoe-subcontainer');

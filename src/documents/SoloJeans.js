@@ -24,7 +24,7 @@ const SoloJeans = () => {
     const [messageVisible, setmessageVisible] = useState(false);
     const contentRef = useRef(null);
   
-    const shoeSizes = ['28', '30', '32', '34', '36'];
+    const shoeSizes = ['30', '32', '34', '36'];
 
     const collapsedHeight = parseInt('65px');
     useEffect(() => {
