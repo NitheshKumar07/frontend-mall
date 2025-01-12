@@ -30,7 +30,7 @@ const Footer = () => {
       <div className='footer-sec-2'>
         <p id='foll'>FOLLOW US  ON</p>
         <a target='blank' className='footImg footTwitt' href='https://x.com/nitesh_0807?t=-FcYLi7wySkE21DJvM5L-Q&s=09'>{svgTwitter}</a>
-        <a target='blank' className='footImg footInsta'>{svgInsta}</a>
+        <a target='blank' className='footImg footInsta' href='https://www.instagram.com/invites/contact/?igsh=195hqsmtacc1m&utm_content=wxgeqsp'>{svgInsta}</a>
         <a target='blank' className='footImg footFace' href='https://www.facebook.com/profile.php?id=61562910386322&mibextid=ZbWKwL'>{svgFace}</a>
       </div>
     </div>

@@ -307,7 +307,7 @@ return (<>
   </div>
   
   {loading ? (<div className='loaderNewCont'><div class="loaderNew"></div></div>) :
-errorMessage ? (<p id='noMatch errMsg'>{errorMessage}</p>) :  //error message
+errorMessage ? (<div className='loaderNewCont'><p id='errMsg'>{errorMessage}</p></div>) :  //error message
 (<>
  
 <div className='svgfilterDiv'>

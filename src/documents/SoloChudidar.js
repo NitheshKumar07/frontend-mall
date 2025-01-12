@@ -147,11 +147,14 @@ const watsappURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(shar
     }
   }
 
+  const addSizeOK = () => {
+    document.querySelector('.addCart-container').style.display='none'    
+  }
 // cart
 const handleAddtoCart = () => {
   const selectedSize = document.querySelector('input[name="chudidarSize"]:checked')?.value; 
   if(!selectedSize){
-    alert('please select size');
+    document.querySelector('.addCart-container').style.display='flex';
     return;
   }
   const product = {
@@ -200,6 +203,15 @@ const handleAddtoCart = () => {
 
   return (<>
   {cartMessage && <div className={`cart-msg ${messageVisible ? 'cart-msg-move' : ''}`}>{cartMessage}</div>}
+
+  <div className='addCart-container'>
+    <div className='addCart-box'>
+      <p id='delete-para'>please choose size</p>
+      <div className='confirm-btns'>
+      <button id='delete-yes' onClick={()=>addSizeOK()}>OK</button>
+      </div>
+    </div>
+  </div>
 
   {soloLaptopDetails ? <> 
   <div className='soloLaptop-Container allmargin'>

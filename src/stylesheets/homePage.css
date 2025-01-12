@@ -2061,10 +2061,12 @@ body.no-scroll {
         right: -16pc;
     }
     .footer-sec-4 p{
-        font-size: .82rem;
+        /* font-size: .82rem; */
+        font-size: 78%;
     }
     .footer-sec-4 h4{
-        font-size: 1em;
+        /* font-size: 1em; */
+        font-size: 90%;
     }
     .copywright{
         font-size: .9em;
@@ -5256,6 +5258,20 @@ footer{
     margin: 12px 0;
     width: fit-content;
 }
+.footer-sec-4 h4{
+    color: #221f20;
+    font-weight: 500;
+    /* font-size: 1.2rem; */
+    margin-bottom: 10px;
+}
+.footer-sec-4 p{
+    display: block;
+    color: #313131;
+    margin: 12px 0;
+    font-weight: 350;
+    color: grey;
+    width: fit-content;
+}
 .footer-sec-2{
     display: flex;
     gap: 12px;
@@ -5286,7 +5302,7 @@ footer{
 .copywright{
     color: grey;
 }
-.footer-sec-4{
+/* .footer-sec-4{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -5299,7 +5315,7 @@ footer{
     color: grey;
     text-align: justify;
     margin-bottom: 10px;
-}
+} */
 #shoeSlide{
     margin-right:10px;
 }
@@ -6489,6 +6505,12 @@ footer{
     bottom: 1.5%;
     z-index: 100;
 }
+.svgfilterDiv1{
+    position: fixed;    
+    right: 10%;
+    bottom: 1.5%;
+    z-index: 100;
+}
 
 .filterSvg{
     fill: white;
@@ -6662,5 +6684,18 @@ footer{
 @media (min-width:360px) and (max-width:379px){
     .SuitsizeChartALL label{
         font-size: 68%;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:850px){
+    .soloSuitImg-Container{
+        width: auto;
+    }
+    .soloSuitImg-box{
+        width: 95%;
+        height:95%;
+    }    
+    #soloSuit-img{
+        width: 100%;
     }
 }
