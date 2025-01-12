@@ -577,7 +577,7 @@ const navigateGamingPageHome = () => {
 
 
       {/* ............................................................................. */}
-      <div className='carousel-container'>  {/* ............body-section-1 starts.................... */}
+        <div className='carousel-container'>  {/* ............body-section-1 starts.................... */}
         <h2>Laptop</h2>
         <button id='left-btn' >&#10094;</button>
         <button id='right-btn'>&#10095;</button>

@@ -79,6 +79,7 @@ useEffect(() => {
 
 const toggleDiscountFilter = () => {
   setShowDiscountOnly((prev) => !prev); // Toggle the discount filter state
+  goTop();
 }
 
 const showFilterToggle = () => {
@@ -93,20 +94,30 @@ const showFilterToggle = () => {
   });
 }
 
+   // Scroll to the top of the page
+   const goTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Smooth scroll effect
+    });
+  }
 // filter handlers
 const filterBrandHandler = (brand) => {
   const updatedBrand = selectedBrand.includes(brand) ? 
   selectedBrand.filter(b => b !== brand) : [...selectedBrand,brand];
+  goTop();
   setSelectedBrand(updatedBrand);
 }
 const filterColourHandler = (colour) => {
   const updatedColour = selectedColour.includes(colour) ? 
   selectedColour.filter(c => c !== colour) : [...selectedColour,colour];
+  goTop();
   setSelectedColour(updatedColour);
 }
 const filterPriceHandler = (priceValue) => {
     // setSelectedPrice(priceValue);
     setSelectedPrice(priceValue === selectedPrice ? '' : priceValue); // Toggle functionality
+    goTop();
 }
 
 useEffect(() => {

@@ -44,7 +44,7 @@ background-color: #f8f9fa;
     padding: 2.2pc 5pc 2.5pc 3pc;
     width: 35pc;
     user-select: none;
-    transition: all 1s ease;
+    /* transition: all 1s ease; */
     /* margin-top: -5px; */
     /* border-top: 5px solid transparent; */
 }
@@ -132,11 +132,9 @@ background-color: #f8f9fa;
 #streching{
     display: inline-block;
     transform-origin: bottom bottom;
-    transition: 0.5s ;
 }
 #streching:hover{
-    transform:scale(1.1);
-    
+    color: purple;
 }
 #warningPara{
 color:red;
