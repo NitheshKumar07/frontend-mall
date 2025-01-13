@@ -38,7 +38,7 @@ background-color: #f8f9fa;
     margin: auto;
     /* padding: 5pc 0; */
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .form{
     /* background-color: #dcedef;      */
