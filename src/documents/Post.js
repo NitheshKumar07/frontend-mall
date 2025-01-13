@@ -154,10 +154,10 @@ useEffect(() => {
     setButtonLoader();
     setDisabled(true);
     setHasErr(false);    
-    axios.post('https://website-api-nu.vercel.app/product',productform)
-    // {
-    //   headers:{Authorization:'Bearer '+localStorage.getItem("token")}
-    // })
+    axios.post('https://website-api-nu.vercel.app/product',productform,
+    {
+      headers:{Authorization:'Bearer '+localStorage.getItem("token")}
+    })
     .then(res=>
       {
         if( SelectedCategoryID === '66dde0197a66622cc0734fee'){navigate('/phonepage');}
