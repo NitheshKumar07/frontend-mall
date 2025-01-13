@@ -2061,12 +2061,12 @@ body.no-scroll {
         right: -16pc;
     }
     .footer-sec-4 p{
-        /* font-size: .82rem; */
-        font-size: 78%;
+        font-size: .8rem;
+        /* font-size: 78%; */
     }
     .footer-sec-4 h4{
-        /* font-size: 1em; */
-        font-size: 90%;
+        font-size: .92em;
+        /* font-size: 90%; */
     }
     .copywright{
         font-size: .9em;
@@ -6697,4 +6697,12 @@ footer{
         height: 80vh;
         font-size: .9em;
     }  
+}
+@media screen and (min-width:501px) and (max-width:800px){
+    .footer-sec-4 p{
+        font-size: .7rem;
+    }
+    .footer-sec-4 h4{
+        font-size: .8em;
+    }
 }
