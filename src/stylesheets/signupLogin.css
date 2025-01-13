@@ -36,7 +36,7 @@ background-color: #f8f9fa;
     background-color:#f8f9fa ;
     width: fit-content;
     margin: auto;
-    /* background-color: yellow; */
+    background-color: yellow;
     /* padding: 5pc 0; */
     overflow-x: hidden;
     overflow-y: auto;
@@ -232,7 +232,10 @@ right: 0px;
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
+    .signupComponent{
+        margin-top: -20px;
+    }
     .form {
       padding:0 1.5pc;
     }
