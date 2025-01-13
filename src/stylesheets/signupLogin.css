@@ -29,7 +29,6 @@ background-color: #f8f9fa;
     width: fit-content;
     /* margin: auto; */
     height: fit-content;
-    background-color: green;
     margin-top: -5pc;
 }
 
@@ -39,8 +38,8 @@ background-color: #f8f9fa;
     margin: auto;
     /* background-color: yellow; */
     /* padding: 5pc 0; */
+    overflow-x: hidden;
     overflow-y: auto;
-    background-color: orange;
 }
 .form{
     /* background-color: #dcedef;      */
@@ -127,7 +126,7 @@ background-color: #f8f9fa;
 
 #text{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 #loginSignupInfo{
@@ -235,7 +234,7 @@ right: 0px;
   
   @media screen and (max-width: 480px) {
     .form {
-      padding: 1.5pc;
+      padding:0 1.5pc;
     }
   
     .form h2 {
