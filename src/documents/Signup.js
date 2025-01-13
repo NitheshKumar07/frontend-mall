@@ -174,12 +174,12 @@ const goMain = () => {
       <h4>create your account</h4>
       <div className='signupContent'>
         <div id='float'>
-          <input  id='full-name'  autoFocus
+          <input  id='full-name'  autoFocus required
             type='text' placeholder='' onChange={(e) => setName(e.target.value.trim())} disabled={isdisabled}/>
           <label htmlFor='full-name'>Full name</label>
         </div>
         <div id='float'>
-          <input  id='email'  type="email"
+          <input  id='email'  type="email" required
             placeholder='' onChange={(e) => setEmail(e.target.value.trim())} disabled={isdisabled} />
           <label htmlFor='email'>Email</label>
         </div>
