@@ -26,6 +26,10 @@ export function Signup() {
   const [hasFetchError,setHasfetchError] = useState(false);
   const [printfetchError,setfetchError] = useState('');
 
+  useEffect(()=> {
+    document.body.classList.remove("no-scroll");
+  }, [])
+  
   useEffect(() => {
     document.body.classList.add('signupBody', 'flexbody')
     return () => {

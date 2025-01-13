@@ -111,7 +111,8 @@ if (shoeMoveContainer) {
         return;
       }else {
         if(!selectedSize){
-          alert('please select size');
+          document.querySelector('.addCart-container').style.display='flex';
+          document.body.classList.add("no-scroll");
           return;
         }
       const product = {
@@ -137,13 +138,15 @@ if (shoeMoveContainer) {
   }
 
   const addSizeOK = () => {
-    document.querySelector('.addCart-container').style.display='none'    
+    document.querySelector('.addCart-container').style.display='none'
+    document.body.classList.remove("no-scroll");
   }
 // cart
 const handleAddtoCart = () => {
   const selectedSize = document.querySelector('input[name="SuitSize"]:checked')?.value; 
   if(!selectedSize){
     document.querySelector('.addCart-container').style.display='flex';
+    document.body.classList.add("no-scroll");
     return;
   }
   const product = {

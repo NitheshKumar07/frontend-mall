@@ -44,6 +44,10 @@ const AllProducts = () => {
     </svg>
   );
 
+  useEffect(()=> {
+    document.body.classList.remove("no-scroll");
+  }, [])
+  
   const openBenarsiSaree = (brand) => {
     navigate(`../sareepage?brand=${encodeURIComponent(brand)}`);
   }

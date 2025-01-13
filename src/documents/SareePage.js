@@ -121,6 +121,9 @@ const filterPriceHandler = (priceValue) => {
     setSelectedPrice(priceValue === selectedPrice ? '' : priceValue); // Toggle functionality
     goTop();
 }
+useEffect(()=> {
+  document.body.classList.remove("no-scroll");
+}, [])
 
 useEffect(() => {
   let filtered = mobile; //start with all products

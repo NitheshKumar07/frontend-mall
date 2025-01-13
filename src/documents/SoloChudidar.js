@@ -122,9 +122,10 @@ const watsappURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(shar
         return;
       }else {
         if(!selectedSize){
-          alert('please select size');
+          document.querySelector('.addCart-container').style.display='flex';
+          document.body.classList.add("no-scroll");
           return;
-        }  
+        } 
       const product = {
         brandName: soloLaptopDetails.brandName,
         _id: soloLaptopDetails._id,
@@ -148,13 +149,15 @@ const watsappURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(shar
   }
 
   const addSizeOK = () => {
-    document.querySelector('.addCart-container').style.display='none'    
+    document.querySelector('.addCart-container').style.display='none'  
+    document.body.classList.remove("no-scroll");
   }
 // cart
 const handleAddtoCart = () => {
   const selectedSize = document.querySelector('input[name="chudidarSize"]:checked')?.value; 
   if(!selectedSize){
     document.querySelector('.addCart-container').style.display='flex';
+    document.body.classList.add("no-scroll");
     return;
   }
   const product = {

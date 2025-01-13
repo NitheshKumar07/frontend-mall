@@ -28,6 +28,11 @@ const SeeCart = () => {
 
     const [addnotchecked, setaddnotchecked] = useState(false)
 
+    useEffect(()=> {
+      document.body.classList.remove("no-scroll");
+    }, [])
+
+    
     const sizesMap = {
       '66e0ac832e6bda2ea8fee821' : ['7', '8', '10', '11'],  //shoe sizes
       '66e0acbc2e6bda2ea8fee823' : ['36', '38', '40', '42'],  //suit sizes

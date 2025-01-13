@@ -20,6 +20,10 @@ export function Login  () {
 
   const { setCartItems } = useCart();
 
+  useEffect(()=> {
+    document.body.classList.remove("no-scroll");
+  }, [])
+  
 
   useEffect(()=>{
     document.body.classList.add('loginbody','flexbody');
