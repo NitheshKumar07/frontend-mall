@@ -61,7 +61,7 @@ const AllProducts = () => {
 
   useEffect(() => {
     setLoading(true);   
-    axios.get(`${process.env.REACT_APP_API_URL}/66e0ac832e6bda2ea8fee821`)
+    axios.get(`${process.env.REACT_APP_API_URL}/product/category/66e0ac832e6bda2ea8fee821`)
       .then(res => {
         setLoading(false);
         const nikeProducts = res.data.product.filter(item => item.brandName && item.brandName.toLowerCase() === 'nike').slice(-10);
@@ -78,7 +78,7 @@ const AllProducts = () => {
   // .......load blackberrys
   useEffect(() => {
     setLoading(true);   
-    axios.get(`${process.env.REACT_APP_API_URL}/66e0acbc2e6bda2ea8fee823`)
+    axios.get(`${process.env.REACT_APP_API_URL}/product/category/66e0acbc2e6bda2ea8fee823`)
       .then(res => {
         setLoading(false);
         const bbsuits = res.data.product.filter(item => item.brandName && item.brandName.toLowerCase() === 'blackberrys').slice(-11);        
@@ -93,7 +93,7 @@ const AllProducts = () => {
     // .......load MZ WALLACE
     useEffect(() => {
       setLoading(true);   
-      axios.get(`${process.env.REACT_APP_API_URL}/66e0ac4a2e6bda2ea8fee81f`)
+      axios.get(`${process.env.REACT_APP_API_URL}/product/category/66e0ac4a2e6bda2ea8fee81f`)
         .then(res => {
           setLoading(false);
           const bbsuits = res.data.product.filter(item => item.brandName && item.brandName.toLowerCase() === 'mz wallace').slice(-11);        
@@ -109,7 +109,7 @@ const AllProducts = () => {
   // .......load laptops
   useEffect(() => {
     setLoading(true);   
-    axios.get(`${process.env.REACT_APP_API_URL}/66b7094e89c2a12074133b29`)
+    axios.get(`${process.env.REACT_APP_API_URL}/product/category/66b7094e89c2a12074133b29`)
       .then(res => {
         setLoading(false);
         const bbsuits = res.data.product.slice(1,12);
