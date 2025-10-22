@@ -92,7 +92,7 @@ const NotpointerNoneBlur = () => {
       signupButtonLoad();
       pointerNoneBlur();
       
-      axios.post('http://3.110.113.45:5000/user/login',
+      axios.post(`${process.env.REACT_APP_API_URL}/user/login`,
         {
             userName:user,
             password:psd

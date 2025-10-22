@@ -48,7 +48,7 @@ useEffect(()=> {
 
 const params = useParams();
 useEffect(() => {
-    axios.get(`http://3.110.113.45:5000/product/${params.id}`)
+    axios.get(`${process.env.REACT_APP_API_URL}/product/${params.id}`)
     .then((res=>{
         const product = res.data.product;
         setBrandName(product.brandName);
@@ -168,7 +168,7 @@ useEffect(() => {
     setButtonLoader();
     setDisabled(true);
     setHasErr(false);    
-    axios.put(`http://3.110.113.45:5000/category/${params.id}`,productform)
+    axios.put(`${process.env.REACT_APP_API_URL}/category/${params.id}`,productform)
     .then(res=>
       {
         if( SelectedCategoryID === '66dde0197a66622cc0734fee'){navigate('/phonepage');}

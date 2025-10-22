@@ -43,7 +43,7 @@ const watsapp = <svg xmlns="http://www.w3.org/2000/svg" fill=' #25d366' viewBox=
     const params = useParams();
 
     useEffect(()=>{
-        axios.get(`http://3.110.113.45:5000/product/${params.id}`)
+        axios.get(`${process.env.REACT_APP_API_URL}/product/${params.id}`)
         .then((res=>{
             setSoloLaptopDetails(res.data.product);
         }))
@@ -58,7 +58,7 @@ const watsapp = <svg xmlns="http://www.w3.org/2000/svg" fill=' #25d366' viewBox=
  useEffect(() => {
   // setLoading(true);
   
-  axios.get('http://3.110.113.45:5000/product/category/66de8d5d74a2d32f040c29ba')
+  axios.get(`${process.env.REACT_APP_API_URL}/product/category/66de8d5d74a2d32f040c29ba`)
     .then(res => {
       if (!soloLaptopDetails || !soloLaptopDetails.brandName) {
         return;

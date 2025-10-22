@@ -144,7 +144,7 @@ const NotpointerNoneBlur = () => {
       formDisableStyle();
       signupButtonLoad();
       pointerNoneBlur();
-      axios.post('http://3.110.113.45:5000/user/signup',formData)
+      axios.post(`${process.env.REACT_APP_API_URL}/user/signup`,formData)
       .then(res => {
         setTimeout(() => {
         navigate('/login');

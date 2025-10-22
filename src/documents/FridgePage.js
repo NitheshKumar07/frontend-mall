@@ -59,7 +59,7 @@ useEffect(()=> {
 
 const getData = ()=>{
   setLoading(true);
-  axios.get('http://3.110.113.45:5000/product/category/66e0abb42e6bda2ea8fee819')
+  axios.get(`${process.env.REACT_APP_API_URL}/product/category/66e0abb42e6bda2ea8fee819`)
   .then(res=>{
     setLoading(false);
     setMobile(res.data.product);
@@ -202,7 +202,7 @@ const deleteProduct = (id) => {
 }
 const deleteYes = () => {
   const dataID = document.querySelector('.delete-box').getAttribute('dataId');
-  axios.delete(`http://3.110.113.45:5000/product/${dataID}`)
+  axios.delete(`${process.env.REACT_APP_API_URL}/product/${dataID}`)
   .then(res => {
   document.querySelector('.delete-container').style.display='none'    
   getData();

@@ -154,7 +154,7 @@ useEffect(() => {
     setButtonLoader();
     setDisabled(true);
     setHasErr(false);    
-    axios.post('http://3.110.113.45:5000/product',productform,
+    axios.post(`${process.env.REACT_APP_API_URL}/product`,productform,
     {
       headers:{Authorization:'Bearer '+localStorage.getItem("token")}
     })
