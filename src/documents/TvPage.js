@@ -185,7 +185,7 @@ const showFilterHandlerPrice = () => {
 
 // reach solo item
 const navigateSoloLaptop = (id) =>{
-  window.open('/solotv/'+id,'_blank');
+  // window.open('/solotv/'+id,'_blank');
 }
 
 const navigate = useNavigate();

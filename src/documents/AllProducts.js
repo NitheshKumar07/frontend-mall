@@ -370,21 +370,21 @@ const navigateLaptopPage = () => {
 
 // reach solo item
 const openSoloLaptop = (id) =>{
-  window.open('/sololaptop/'+id,'_blank');
+  // window.open('/sololaptop/'+id,'_blank');
 }
 
 const navigateSoloLaptop = (id) =>{
-  window.open('/solophone/'+id,'_blank');
+  // window.open('/solophone/'+id,'_blank');
 }
 
 const navigateSoloBag = (id) =>{
-  window.open('/solohandbag/'+id,'_blank');
+  // window.open('/solohandbag/'+id,'_blank');
 }
 const navigateSoloShoe = (id) => {
-  window.open('/soloshoe/'+id,'_blank');
+  // window.open('/soloshoe/'+id,'_blank');
 }
 const navigateSoloSuit = (id) => {
-  window.open('/solosuit/'+id,'_blank');
+  // window.open('/solosuit/'+id,'_blank');
 }
 
 

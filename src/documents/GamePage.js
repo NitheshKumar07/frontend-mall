@@ -172,7 +172,7 @@ const showFilterHandlerPrice = () => {
 
 // reach solo item
 const navigateSoloLaptop = (id) =>{
-  window.open('/sologame/'+id,'_blank');
+  // window.open('/sologame/'+id,'_blank');
 }
 
 const navigate = useNavigate();

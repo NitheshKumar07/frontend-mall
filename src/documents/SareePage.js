@@ -182,7 +182,7 @@ const showFilterHandlerPrice = () => {
 
 // reach solo item
 const navigateSoloLaptop = (id) =>{
-  window.open('/solosaree/'+id,'_blank');
+  // window.open('/solosaree/'+id,'_blank');
 }
 
 const navigate = useNavigate();

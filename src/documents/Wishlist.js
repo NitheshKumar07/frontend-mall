@@ -15,33 +15,33 @@ useEffect(()=> {
 const navigate = useNavigate();
 
 const navigateSoloLaptop = (id, ctgryId) => {
-  if(ctgryId === '66b7094e89c2a12074133b29') {
-    window.open('/sololaptop/'+id, '_blank');
-  } else if(ctgryId === '66dde0197a66622cc0734fee') {
-    window.open('/solophone/'+id, '_blank');
-  } else if(ctgryId === '66e0ab462e6bda2ea8fee817') {
-    window.open('/solotv/'+id, '_blank');
-  } else if(ctgryId === '66e0ab0a2e6bda2ea8fee815') {
-    window.open('/soloac/'+id, '_blank');
-  } else if(ctgryId === '66e0abb42e6bda2ea8fee819') {
-    window.open('/solofridge/'+id, '_blank');
-  } else if(ctgryId === '66e0abe62e6bda2ea8fee81b') {
-    window.open('/sologame/'+id, '_blank');
-  } else if(ctgryId === '66e0ac1e2e6bda2ea8fee81d') {
-    window.open('/solochudidar/'+id, '_blank');
-  } else if(ctgryId === '66de8d5d74a2d32f040c29ba') {
-    window.open('/solosaree/'+id, '_blank');
-  } else if(ctgryId === '66e0ac4a2e6bda2ea8fee81f') {
-    window.open('/solohandbag/'+id, '_blank');
-  } else if(ctgryId === '66e0ac832e6bda2ea8fee821') {
-    window.open('/soloshoe/'+id, '_blank');
-  } else if(ctgryId === '66e0acbc2e6bda2ea8fee823') {
-    window.open('/solosuit/'+id, '_blank');
-  } else if(ctgryId === '66e0ace82e6bda2ea8fee825') {
-    window.open('/solojeans/'+id, '_blank');
-  } else if(ctgryId === '66e863d6e2140616a4dbd9ef') {
-    window.open('/solowatch/'+id, '_blank');
-  }
+  // if(ctgryId === '66b7094e89c2a12074133b29') {
+  //   window.open('/sololaptop/'+id, '_blank');
+  // } else if(ctgryId === '66dde0197a66622cc0734fee') {
+  //   window.open('/solophone/'+id, '_blank');
+  // } else if(ctgryId === '66e0ab462e6bda2ea8fee817') {
+  //   window.open('/solotv/'+id, '_blank');
+  // } else if(ctgryId === '66e0ab0a2e6bda2ea8fee815') {
+  //   window.open('/soloac/'+id, '_blank');
+  // } else if(ctgryId === '66e0abb42e6bda2ea8fee819') {
+  //   window.open('/solofridge/'+id, '_blank');
+  // } else if(ctgryId === '66e0abe62e6bda2ea8fee81b') {
+  //   window.open('/sologame/'+id, '_blank');
+  // } else if(ctgryId === '66e0ac1e2e6bda2ea8fee81d') {
+  //   window.open('/solochudidar/'+id, '_blank');
+  // } else if(ctgryId === '66de8d5d74a2d32f040c29ba') {
+  //   window.open('/solosaree/'+id, '_blank');
+  // } else if(ctgryId === '66e0ac4a2e6bda2ea8fee81f') {
+  //   window.open('/solohandbag/'+id, '_blank');
+  // } else if(ctgryId === '66e0ac832e6bda2ea8fee821') {
+  //   window.open('/soloshoe/'+id, '_blank');
+  // } else if(ctgryId === '66e0acbc2e6bda2ea8fee823') {
+  //   window.open('/solosuit/'+id, '_blank');
+  // } else if(ctgryId === '66e0ace82e6bda2ea8fee825') {
+  //   window.open('/solojeans/'+id, '_blank');
+  // } else if(ctgryId === '66e863d6e2140616a4dbd9ef') {
+  //   window.open('/solowatch/'+id, '_blank');
+  // }
 };
 
 // clear wish

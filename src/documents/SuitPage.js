@@ -173,7 +173,7 @@ const showFilterHandlerPrice = () => {
 
 // reach solo item
 const navigateSoloLaptop = (id) =>{
-  window.open('/solosuit/'+id,'_blank');
+  // window.open('/solosuit/'+id,'_blank');
 }
 const navigate = useNavigate();
 // update
