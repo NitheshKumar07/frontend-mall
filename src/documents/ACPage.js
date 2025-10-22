@@ -183,9 +183,9 @@ const showFilterHandlerPrice = () => {
 }
 
 // reach solo item
-const navigateSoloLaptop = (id) =>{
-  window.open('/soloac/'+id,'_blank');
-}
+// const navigateSoloLaptop = (id) =>{
+//   window.open('/soloac/'+id,'_blank');
+// }
 
 const navigate = useNavigate();
 // update
