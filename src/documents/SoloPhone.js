@@ -45,7 +45,7 @@ const svg1 = <svg id='carousel-content-svg1' fill='rgb(161, 159, 159)' xmlns="ht
     const params = useParams();
 
     useEffect(()=>{
-        axios.get(`https://website-api-nu.vercel.app/product/${params.id}`)
+        axios.get(`http://3.110.113.45:5000/product/${params.id}`)
         .then((res=>{
             setSoloLaptopDetails(res.data.product);
         }))
@@ -61,7 +61,7 @@ const watsappURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(shar
  useEffect(() => {
   // setLoading(true);
   
-  axios.get('https://website-api-nu.vercel.app/product/category/66dde0197a66622cc0734fee')
+  axios.get('http://3.110.113.45:5000/product/category/66dde0197a66622cc0734fee')
     .then(res => {
       if (!soloLaptopDetails || !soloLaptopDetails.brandName) {
         return;

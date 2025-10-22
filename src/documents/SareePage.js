@@ -54,7 +54,7 @@ const [moveHeart, setmoveHeart] = useState({});
 
 const getData = ()=>{
   setLoading(true);
-  axios.get('https://website-api-nu.vercel.app/product/category/66de8d5d74a2d32f040c29ba')
+  axios.get('http://3.110.113.45:5000/product/category/66de8d5d74a2d32f040c29ba')
   .then(res=>{
     setLoading(false);
     setMobile(res.data.product);
@@ -198,7 +198,7 @@ const deleteProduct = (id) => {
 }
 const deleteYes = () => {
   const dataID = document.querySelector('.delete-box').getAttribute('dataId');
-  axios.delete(`https://website-api-nu.vercel.app/product/${dataID}`)
+  axios.delete(`http://3.110.113.45:5000/product/${dataID}`)
   .then(res => {
   document.querySelector('.delete-container').style.display='none'    
   getData();

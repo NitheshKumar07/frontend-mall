@@ -45,7 +45,7 @@ const SoloAC = () => {
     const params = useParams();
 
     useEffect(()=>{
-        axios.get(`https://website-api-nu.vercel.app/product/${params.id}`)
+        axios.get(`http://3.110.113.45:5000/product/${params.id}`)
         .then((res=>{
             setSoloLaptopDetails(res.data.product);
         }))
@@ -59,7 +59,7 @@ const SoloAC = () => {
   useEffect(() => {
     // setLoading(true);
     
-    axios.get('https://website-api-nu.vercel.app/product/category/66e0ab0a2e6bda2ea8fee815')
+    axios.get('http://3.110.113.45:5000/product/category/66e0ab0a2e6bda2ea8fee815')
       .then(res => {
         if (!soloLaptopDetails || !soloLaptopDetails.brandName) {
           return;

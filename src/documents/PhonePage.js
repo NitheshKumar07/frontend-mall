@@ -60,7 +60,7 @@ useEffect(()=> {
 
 const getData = ()=>{
   setLoading(true);
-  axios.get('https://website-api-nu.vercel.app/product/category/66dde0197a66622cc0734fee')
+  axios.get('http://3.110.113.45:5000/product/category/66dde0197a66622cc0734fee')
   .then(res=>{
     setLoading(false);
     setMobile(res.data.product);
@@ -203,7 +203,7 @@ const deleteProduct = (id) => {
 }
 const deleteYes = () => {
   const dataID = document.querySelector('.delete-box').getAttribute('dataId');
-  axios.delete(`https://website-api-nu.vercel.app/product/${dataID}`)
+  axios.delete(`http://3.110.113.45:5000/product/${dataID}`)
   .then(res => {
   document.querySelector('.delete-container').style.display='none'    
   getData();

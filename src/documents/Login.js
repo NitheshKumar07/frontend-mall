@@ -92,7 +92,7 @@ const NotpointerNoneBlur = () => {
       signupButtonLoad();
       pointerNoneBlur();
       
-      axios.post('https://website-api-nu.vercel.app/user/login',
+      axios.post('http://3.110.113.45:5000/user/login',
         {
             userName:user,
             password:psd
