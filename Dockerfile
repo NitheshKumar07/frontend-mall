@@ -22,10 +22,22 @@
 FROM node:18
 
 WORKDIR /app
+
+# Copy package files and install dependencies
 COPY package*.json ./
 RUN npm install
+
+# Copy all source code
 COPY . .
 
-# Start the development server (not for production, but works)
-EXPOSE 3000
-CMD ["npm", "start"]
+# Build the React app (reads .env at build time)
+RUN npm run build
+
+# Install 'serve' to serve the build folder
+RUN npm install -g serve
+
+# Expose port 80
+EXPOSE 80
+
+# Serve the build folder
+CMD ["serve", "-s", "build", "-l", "80"]
